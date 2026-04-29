@@ -7,6 +7,7 @@ from dataclasses import dataclass, field
 class FundRecord:
     fund_code: str
     name: str
+    english_name: str
     management_company: str
     source_kind: str
 
@@ -43,4 +44,3 @@ class ManagerResult:
     mainland_evidence: list[MoneyEvidence] = field(default_factory=list)
     fetched_urls: list[str] = field(default_factory=list)
     errors: list[str] = field(default_factory=list)
-

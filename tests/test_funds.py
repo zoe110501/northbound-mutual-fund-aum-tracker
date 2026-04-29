@@ -8,4 +8,5 @@ def test_load_fund_records():
     assert len(funds) == 44
     assert len(mainland) == 248
     assert any(item.management_company == "摩根基金(亚洲)" for item in mainland)
-
+    assert funds[0].english_name == "BEA Union Investment Series - BEA Union Investment Asian Bond and Currency Fund"
+    assert mainland[0].english_name == "JPMorgan Asian Total Return Bond Fund"

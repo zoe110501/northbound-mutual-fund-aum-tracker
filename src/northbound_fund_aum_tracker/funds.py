@@ -27,6 +27,7 @@ def load_fund_records(path: Path) -> tuple[list[FundRecord], list[FundRecord]]:
         FundRecord(
             fund_code=_clean_text(row.get("fund_code")),
             name=_clean_text(row.get("name")),
+            english_name=_clean_text(row.get("english_name")),
             management_company=infer_manager(_clean_text(row.get("name")), _clean_text(row.get("management_company"))),
             source_kind="global_fund",
         )
@@ -37,6 +38,7 @@ def load_fund_records(path: Path) -> tuple[list[FundRecord], list[FundRecord]]:
         FundRecord(
             fund_code=_clean_text(row.get("fund_code")),
             name=_clean_text(row.get("name")),
+            english_name=_clean_text(row.get("english_name")),
             management_company=infer_manager(_clean_text(row.get("name")), _clean_text(row.get("management_company"))),
             source_kind="mainland_share_class",
         )

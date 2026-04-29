@@ -6,4 +6,5 @@ __pycache__/
 *.egg-info/
 .venv/
 tmp_outputs/
+tmp_outputs_*/
 *.log

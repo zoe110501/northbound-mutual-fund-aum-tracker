@@ -50,18 +50,26 @@ def normalize_text(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
-def target_aliases(target_name: str) -> list[str]:
+def target_aliases(target_name: str, extra_aliases: list[str] | None = None) -> list[str]:
     aliases = {target_name.strip()}
+    for alias in extra_aliases or []:
+        aliases.add(alias.strip())
     for token in ("PRC-", "PRC", "CNY HDG", "USD", "累积", "累計", "派息", "累计", "每月"):
         if token in target_name:
             aliases.add(target_name.replace(token, "").strip())
     return [item for item in aliases if len(item) >= 4]
 
 
-def extract_amounts_for_target(text: str, target_name: str, source_url: str) -> list[ExtractedAmount]:
+def extract_amounts_for_target(
+    text: str,
+    target_name: str,
+    source_url: str,
+    extra_aliases: list[str] | None = None,
+    required_term_groups: list[list[str]] | None = None,
+) -> list[ExtractedAmount]:
     normalized = normalize_text(text)
     windows: list[str] = []
-    for alias in target_aliases(target_name):
+    for alias in target_aliases(target_name, extra_aliases):
         for match in re.finditer(re.escape(alias), normalized, flags=re.IGNORECASE):
             start = max(match.start() - 1200, 0)
             end = min(match.end() + 1200, len(normalized))
@@ -73,6 +81,8 @@ def extract_amounts_for_target(text: str, target_name: str, source_url: str) -> 
     results: list[ExtractedAmount] = []
     seen: set[tuple[str, str, str]] = set()
     for window in windows:
+        if not _has_required_terms(window, required_term_groups):
+            continue
         if not RELEVANT_LABEL_PATTERN.search(window):
             continue
         label = _best_label(window)
@@ -120,6 +130,13 @@ def extract_amounts_for_target(text: str, target_name: str, source_url: str) -> 
                     )
                 )
     return results
+
+
+def _has_required_terms(window: str, required_term_groups: list[list[str]] | None) -> bool:
+    if not required_term_groups:
+        return True
+    normalized_window = window.lower()
+    return all(any(term.lower() in normalized_window for term in group) for group in required_term_groups)
 
 
 def parse_amount(raw_amount: str, unit: str) -> float:

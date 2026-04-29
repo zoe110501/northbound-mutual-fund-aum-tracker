@@ -14,6 +14,7 @@ def test_write_excel_report_inserts_latest_column_and_marks_changes(tmp_path: Pa
                     "sequence": 1,
                     "fund_code": "968000.OF",
                     "name": "示例基金",
+                    "english_name": "Example Fund",
                     "inception_date": "2020-01-01",
                     "recognition_approval_date": "2020-01-02",
                     "investment_type": "债券型基金",
@@ -64,9 +65,9 @@ def test_write_excel_report_inserts_latest_column_and_marks_changes(tmp_path: Pa
     workbook = load_workbook(output_path)
     sheet = workbook["合并成基金全称"]
     headers = [cell.value for cell in sheet[1]]
+    assert headers[3] == "英文全称"
     latest_col = headers.index("最新基金规模合计(亿人民币）（2026-04-29）") + 1
     assert headers[latest_col - 2] == "基金规模合计(亿人民币)"
     assert sheet.cell(row=2, column=latest_col).value == 11.0
     assert sheet.cell(row=2, column=latest_col).font.color.rgb == "00FF0000"
     assert "https://example.com/report.pdf" in sheet.cell(row=2, column=latest_col).comment.text
-

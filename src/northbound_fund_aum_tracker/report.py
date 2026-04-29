@@ -15,6 +15,7 @@ HEADER_MAP = {
     "sequence": "序号",
     "fund_code": "基金代码",
     "name": "基金全称",
+    "english_name": "英文全称",
     "inception_date": "基金成立日",
     "recognition_approval_date": "互认基金批复日期",
     "investment_type": "投资类型",
@@ -210,4 +211,3 @@ def _column_widths(column_count: int) -> list[int]:
     if column_count <= len(base):
         return base[:column_count]
     return base + [16] * (column_count - len(base))
-

@@ -110,7 +110,15 @@ def collect_evidence(
     seen: set[tuple[str, str, str, str]] = set()
     for target in targets:
         for source_url, text in text_sources:
-            for extracted in extract_amounts_for_target(text, target.name, source_url):
+            required_term_groups = share_class_term_groups(target)
+            aliases = english_aliases_for_target(target, required_term_groups)
+            for extracted in extract_amounts_for_target(
+                text,
+                target.name,
+                source_url,
+                extra_aliases=aliases,
+                required_term_groups=required_term_groups,
+            ):
                 key = (
                     extracted.target_name,
                     extracted.currency,
@@ -134,6 +142,36 @@ def collect_evidence(
                     )
                 )
     return evidence
+
+
+def english_aliases_for_target(target: FundRecord, required_term_groups: list[list[str]]) -> list[str]:
+    if not target.english_name:
+        return []
+    if target.source_kind == "mainland_share_class" and not required_term_groups:
+        return []
+    return [target.english_name]
+
+
+def share_class_term_groups(target: FundRecord) -> list[list[str]]:
+    if target.source_kind != "mainland_share_class":
+        return []
+    name = target.name.upper()
+    groups: list[list[str]] = []
+    if "PRC" in name:
+        groups.append(["PRC"])
+    if "CNY" in name:
+        groups.append(["CNY", "RMB", "CNH"])
+    if "USD" in name:
+        groups.append(["USD"])
+    if "HKD" in name:
+        groups.append(["HKD"])
+    if "HDG" in name or "对冲" in target.name or "對沖" in target.name:
+        groups.append(["HDG", "HEDGED", "对冲", "對沖"])
+    if any(token in target.name for token in ("累积", "累計", "累计")):
+        groups.append(["acc", "accumulation", "accumulative", "累积", "累計", "累计"])
+    if any(token in target.name for token in ("派息", "分派")):
+        groups.append(["dist", "distribution", "dividend", "monthly", "派息", "分派"])
+    return groups
 
 
 def manager_result_to_dict(result: ManagerResult) -> dict:
