@@ -50,8 +50,11 @@ REPORT_KEYWORDS = (
 )
 
 
+REQUEST_TIMEOUT_SECONDS = 15
+
+
 def fetch_text(session: requests.Session, url: str) -> tuple[str, str]:
-    response = session.get(url, timeout=30, headers={"User-Agent": "northbound-aum-tracker/0.1"})
+    response = session.get(url, timeout=REQUEST_TIMEOUT_SECONDS, headers={"User-Agent": "northbound-aum-tracker/0.1"})
     response.raise_for_status()
     content_type = response.headers.get("content-type", "").lower()
     if "pdf" in content_type or url.lower().endswith(".pdf"):
@@ -63,7 +66,7 @@ def fetch_text(session: requests.Session, url: str) -> tuple[str, str]:
 
 
 def discover_candidate_links(session: requests.Session, seed_url: str, limit: int) -> list[str]:
-    response = session.get(seed_url, timeout=30, headers={"User-Agent": "northbound-aum-tracker/0.1"})
+    response = session.get(seed_url, timeout=REQUEST_TIMEOUT_SECONDS, headers={"User-Agent": "northbound-aum-tracker/0.1"})
     response.raise_for_status()
     return candidate_links_from_html(response.text, seed_url, limit)
 
@@ -112,4 +115,3 @@ def extract_pdf_text(content: bytes) -> str:
     for page in reader.pages:
         pages.append(page.extract_text() or "")
     return "\n".join(pages)
-

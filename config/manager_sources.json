@@ -1,196 +1,248 @@
 {
   "managers": [
     {
-      "name": "摩根基金(亚洲)",
+      "name": "鎽╂牴鍩洪噾(浜氭床)",
       "official_site": "https://am.jpmorgan.com/hk/en/asset-management/adv/",
-      "seed_urls": ["https://am.jpmorgan.com/hk/en/asset-management/adv/"],
+      "seed_urls": [
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/"
+      ],
       "discover_links": true,
-      "max_discovered_links": 30
+      "max_discovered_links": 6
     },
     {
-      "name": "摩根资管(亚太)",
+      "name": "鎽╂牴璧勭(浜氬お)",
       "official_site": "https://am.jpmorgan.com/hk/en/asset-management/adv/",
-      "seed_urls": ["https://am.jpmorgan.com/hk/en/asset-management/adv/"],
+      "seed_urls": [
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/"
+      ],
       "discover_links": true,
-      "max_discovered_links": 30
+      "max_discovered_links": 6
     },
     {
-      "name": "汇丰投资基金(香港)",
+      "name": "姹囦赴鎶曡祫鍩洪噾(棣欐腐)",
       "official_site": "https://www.assetmanagement.hsbc.com.hk/en/",
-      "seed_urls": ["https://www.assetmanagement.hsbc.com.hk/en/individual-investor"],
+      "seed_urls": [
+        "https://www.assetmanagement.hsbc.com.hk/en/individual-investor"
+      ],
       "discover_links": true,
-      "max_discovered_links": 30
+      "max_discovered_links": 6
     },
     {
-      "name": "东方汇理(香港)",
+      "name": "涓滄柟姹囩悊(棣欐腐)",
       "official_site": "https://www.amundi.com.hk/retail",
-      "seed_urls": ["https://www.amundi.com.hk/retail/funds-hk"],
+      "seed_urls": [
+        "https://www.amundi.com.hk/retail/funds-hk"
+      ],
       "discover_links": true,
-      "max_discovered_links": 30
+      "max_discovered_links": 6
     },
     {
-      "name": "东亚联丰投资管理",
+      "name": "涓滀簹鑱斾赴鎶曡祫绠＄悊",
       "official_site": "https://www.buim.com/",
-      "seed_urls": ["https://www.buim.com/"],
+      "seed_urls": [
+        "https://www.buim.com/"
+      ],
       "discover_links": true,
-      "max_discovered_links": 30
+      "max_discovered_links": 6
     },
     {
-      "name": "中银香港资管",
+      "name": "涓摱棣欐腐璧勭",
       "official_site": "https://www.bochkam.com/en/",
-      "seed_urls": ["https://www.bochkam.com/en/"],
+      "seed_urls": [
+        "https://www.bochkam.com/en/"
+      ],
       "discover_links": true,
-      "max_discovered_links": 25
+      "max_discovered_links": 6
     },
     {
-      "name": "惠理基金(香港)",
+      "name": "鎯犵悊鍩洪噾(棣欐腐)",
       "official_site": "https://www.valuepartners-group.com/en/",
       "seed_urls": [
         "https://www.valuepartners-group.com/en/products-services/funds/",
         "https://www.valuepartners-group.com/en/products-services/funds/fund-documents-hong-kong-retail-investors/"
       ],
       "discover_links": true,
-      "max_discovered_links": 30
+      "max_discovered_links": 6
     },
     {
-      "name": "恒生投资管理",
+      "name": "鎭掔敓鎶曡祫绠＄悊",
       "official_site": "https://www.hangsenginvestment.com/",
-      "seed_urls": ["https://www.hangsenginvestment.com/"],
+      "seed_urls": [
+        "https://www.hangsenginvestment.com/"
+      ],
       "discover_links": true,
-      "max_discovered_links": 25
+      "max_discovered_links": 6
     },
     {
-      "name": "中银保诚资管",
+      "name": "涓摱淇濊瘹璧勭",
       "official_site": "https://www.boci-pru.com.hk/english/",
-      "seed_urls": ["https://www.boci-pru.com.hk/english/"],
+      "seed_urls": [
+        "https://www.boci-pru.com.hk/english/"
+      ],
       "discover_links": true,
-      "max_discovered_links": 25
+      "max_discovered_links": 6
     },
     {
-      "name": "建银国际资管",
+      "name": "寤洪摱鍥介檯璧勭",
       "official_site": "https://www.ccbintl.com.hk/English.html",
-      "seed_urls": ["https://www.ccbintl.com.hk/English/management7.html"],
+      "seed_urls": [
+        "https://www.ccbintl.com.hk/English/management7.html"
+      ],
       "discover_links": true,
-      "max_discovered_links": 20
+      "max_discovered_links": 6
     },
     {
-      "name": "行健资管",
+      "name": "琛屽仴璧勭",
       "official_site": "https://www.zealasset.com/",
-      "seed_urls": ["https://www.zealasset.com/en/about-us"],
+      "seed_urls": [
+        "https://www.zealasset.com/en/about-us"
+      ],
       "discover_links": true,
-      "max_discovered_links": 20
+      "max_discovered_links": 6
     },
     {
-      "name": "施罗德投资管理(香港)",
+      "name": "鏂界綏寰锋姇璧勭鐞?棣欐腐)",
       "official_site": "https://www.schroders.com/en-hk/hk/individual",
-      "seed_urls": ["https://www.schroders.com/en-hk/hk/individual"],
+      "seed_urls": [
+        "https://www.schroders.com/en-hk/hk/individual"
+      ],
       "discover_links": true,
-      "max_discovered_links": 25
+      "max_discovered_links": 6
     },
     {
-      "name": "海通国际资管(香港)",
+      "name": "娴烽€氬浗闄呰祫绠?棣欐腐)",
       "official_site": "https://www.haitongetf.com.hk/asm/en-us",
-      "seed_urls": ["https://www.haitongetf.com.hk/asm/en-us"],
+      "seed_urls": [
+        "https://www.haitongetf.com.hk/asm/en-us"
+      ],
       "discover_links": true,
-      "max_discovered_links": 25
+      "max_discovered_links": 6
     },
     {
-      "name": "博时基金(国际)",
+      "name": "鍗氭椂鍩洪噾(鍥介檯)",
       "official_site": "https://www.bosera.com.hk/en-US/",
-      "seed_urls": ["https://www.bosera.com.hk/en-US/"],
+      "seed_urls": [
+        "https://www.bosera.com.hk/en-US/"
+      ],
       "discover_links": true,
-      "max_discovered_links": 25
+      "max_discovered_links": 6
     },
     {
-      "name": "易方达资管(香港)",
+      "name": "鏄撴柟杈捐祫绠?棣欐腐)",
       "official_site": "https://www.efunds.com.hk/",
-      "seed_urls": ["https://www.efunds.com.hk/"],
+      "seed_urls": [
+        "https://www.efunds.com.hk/"
+      ],
       "discover_links": true,
-      "max_discovered_links": 25
+      "max_discovered_links": 6
     },
     {
-      "name": "华夏基金(香港)",
+      "name": "鍗庡鍩洪噾(棣欐腐)",
       "official_site": "https://www.chinaamc.com.hk/",
-      "seed_urls": ["https://www.chinaamc.com.hk/"],
+      "seed_urls": [
+        "https://www.chinaamc.com.hk/"
+      ],
       "discover_links": true,
-      "max_discovered_links": 25
+      "max_discovered_links": 6
     },
     {
-      "name": "弘收资管(香港)",
+      "name": "寮樻敹璧勭(棣欐腐)",
       "official_site": "https://www.incomepartners.com/",
-      "seed_urls": ["https://www.incomepartners.com/income-partners-asset-management-hk-ltd"],
+      "seed_urls": [
+        "https://www.incomepartners.com/income-partners-asset-management-hk-ltd"
+      ],
       "discover_links": true,
-      "max_discovered_links": 25
+      "max_discovered_links": 6
     },
     {
-      "name": "高腾国际资管",
+      "name": "楂樿吘鍥介檯璧勭",
       "official_site": "https://www.gaotengasset.com/",
-      "seed_urls": ["https://www.gaotengasset.com/"],
+      "seed_urls": [
+        "https://www.gaotengasset.com/"
+      ],
       "discover_links": true,
-      "max_discovered_links": 25
+      "max_discovered_links": 6
     },
     {
-      "name": "兴证国际资管",
+      "name": "鍏磋瘉鍥介檯璧勭",
       "official_site": "https://www.xyzq.com.hk/",
-      "seed_urls": ["https://www.xyzq.com.hk/"],
+      "seed_urls": [
+        "https://www.xyzq.com.hk/"
+      ],
       "discover_links": true,
-      "max_discovered_links": 20
+      "max_discovered_links": 6
     },
     {
-      "name": "瑞银基金(卢森堡)",
+      "name": "鐟為摱鍩洪噾(鍗㈡．鍫?",
       "official_site": "https://www.ubs.com/hk/en/assetmanagement",
-      "seed_urls": ["https://www.ubs.com/hk/en/assetmanagement"],
+      "seed_urls": [
+        "https://www.ubs.com/hk/en/assetmanagement"
+      ],
       "discover_links": true,
-      "max_discovered_links": 25
+      "max_discovered_links": 6
     },
     {
-      "name": "瑞银环球资管(香港)",
+      "name": "鐟為摱鐜悆璧勭(棣欐腐)",
       "official_site": "https://www.ubs.com/hk/en/assetmanagement",
-      "seed_urls": ["https://www.ubs.com/hk/en/assetmanagement"],
+      "seed_urls": [
+        "https://www.ubs.com/hk/en/assetmanagement"
+      ],
       "discover_links": true,
-      "max_discovered_links": 25
+      "max_discovered_links": 6
     },
     {
-      "name": "南方东英资管",
+      "name": "鍗楁柟涓滆嫳璧勭",
       "official_site": "https://www.csopasset.com/",
-      "seed_urls": ["https://www.csopasset.com/"],
+      "seed_urls": [
+        "https://www.csopasset.com/"
+      ],
       "discover_links": true,
-      "max_discovered_links": 25
+      "max_discovered_links": 6
     },
     {
-      "name": "安联环球投资(亚太)",
+      "name": "瀹夎仈鐜悆鎶曡祫(浜氬お)",
       "official_site": "https://hk.allianzgi.com/en-hk/retail",
-      "seed_urls": ["https://hk.allianzgi.com/en-hk/retail"],
+      "seed_urls": [
+        "https://hk.allianzgi.com/en-hk/retail"
+      ],
       "discover_links": true,
-      "max_discovered_links": 25
+      "max_discovered_links": 6
     },
     {
-      "name": "富达基金(香港)",
+      "name": "瀵岃揪鍩洪噾(棣欐腐)",
       "official_site": "https://www.fidelity.com.hk/",
-      "seed_urls": ["https://www.fidelity.com.hk/"],
+      "seed_urls": [
+        "https://www.fidelity.com.hk/"
+      ],
       "discover_links": true,
-      "max_discovered_links": 25
+      "max_discovered_links": 6
     },
     {
-      "name": "贝莱德资管(北亚)",
+      "name": "璐濊幈寰疯祫绠?鍖椾簹)",
       "official_site": "https://www.blackrock.com/hk/en",
-      "seed_urls": ["https://www.blackrock.com/hk/en"],
+      "seed_urls": [
+        "https://www.blackrock.com/hk/en"
+      ],
       "discover_links": true,
-      "max_discovered_links": 30
+      "max_discovered_links": 6
     },
     {
-      "name": "太平资管(香港)",
+      "name": "澶钩璧勭(棣欐腐)",
       "official_site": "https://www.tpfh.cntaiping.com/",
-      "seed_urls": ["https://www.tpfh.cntaiping.com/"],
+      "seed_urls": [
+        "https://www.tpfh.cntaiping.com/"
+      ],
       "discover_links": true,
-      "max_discovered_links": 20
+      "max_discovered_links": 6
     },
     {
-      "name": "百达资产管理(香港)",
+      "name": "鐧捐揪璧勪骇绠＄悊(棣欐腐)",
       "official_site": "https://www.am.pictet/",
-      "seed_urls": ["https://www.am.pictet/"],
+      "seed_urls": [
+        "https://www.am.pictet/"
+      ],
       "discover_links": true,
-      "max_discovered_links": 20
+      "max_discovered_links": 6
     }
   ]
 }
