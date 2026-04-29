@@ -1,0 +1,196 @@
+{
+  "managers": [
+    {
+      "name": "摩根基金(亚洲)",
+      "official_site": "https://am.jpmorgan.com/hk/en/asset-management/adv/",
+      "seed_urls": ["https://am.jpmorgan.com/hk/en/asset-management/adv/"],
+      "discover_links": true,
+      "max_discovered_links": 30
+    },
+    {
+      "name": "摩根资管(亚太)",
+      "official_site": "https://am.jpmorgan.com/hk/en/asset-management/adv/",
+      "seed_urls": ["https://am.jpmorgan.com/hk/en/asset-management/adv/"],
+      "discover_links": true,
+      "max_discovered_links": 30
+    },
+    {
+      "name": "汇丰投资基金(香港)",
+      "official_site": "https://www.assetmanagement.hsbc.com.hk/en/",
+      "seed_urls": ["https://www.assetmanagement.hsbc.com.hk/en/individual-investor"],
+      "discover_links": true,
+      "max_discovered_links": 30
+    },
+    {
+      "name": "东方汇理(香港)",
+      "official_site": "https://www.amundi.com.hk/retail",
+      "seed_urls": ["https://www.amundi.com.hk/retail/funds-hk"],
+      "discover_links": true,
+      "max_discovered_links": 30
+    },
+    {
+      "name": "东亚联丰投资管理",
+      "official_site": "https://www.buim.com/",
+      "seed_urls": ["https://www.buim.com/"],
+      "discover_links": true,
+      "max_discovered_links": 30
+    },
+    {
+      "name": "中银香港资管",
+      "official_site": "https://www.bochkam.com/en/",
+      "seed_urls": ["https://www.bochkam.com/en/"],
+      "discover_links": true,
+      "max_discovered_links": 25
+    },
+    {
+      "name": "惠理基金(香港)",
+      "official_site": "https://www.valuepartners-group.com/en/",
+      "seed_urls": [
+        "https://www.valuepartners-group.com/en/products-services/funds/",
+        "https://www.valuepartners-group.com/en/products-services/funds/fund-documents-hong-kong-retail-investors/"
+      ],
+      "discover_links": true,
+      "max_discovered_links": 30
+    },
+    {
+      "name": "恒生投资管理",
+      "official_site": "https://www.hangsenginvestment.com/",
+      "seed_urls": ["https://www.hangsenginvestment.com/"],
+      "discover_links": true,
+      "max_discovered_links": 25
+    },
+    {
+      "name": "中银保诚资管",
+      "official_site": "https://www.boci-pru.com.hk/english/",
+      "seed_urls": ["https://www.boci-pru.com.hk/english/"],
+      "discover_links": true,
+      "max_discovered_links": 25
+    },
+    {
+      "name": "建银国际资管",
+      "official_site": "https://www.ccbintl.com.hk/English.html",
+      "seed_urls": ["https://www.ccbintl.com.hk/English/management7.html"],
+      "discover_links": true,
+      "max_discovered_links": 20
+    },
+    {
+      "name": "行健资管",
+      "official_site": "https://www.zealasset.com/",
+      "seed_urls": ["https://www.zealasset.com/en/about-us"],
+      "discover_links": true,
+      "max_discovered_links": 20
+    },
+    {
+      "name": "施罗德投资管理(香港)",
+      "official_site": "https://www.schroders.com/en-hk/hk/individual",
+      "seed_urls": ["https://www.schroders.com/en-hk/hk/individual"],
+      "discover_links": true,
+      "max_discovered_links": 25
+    },
+    {
+      "name": "海通国际资管(香港)",
+      "official_site": "https://www.haitongetf.com.hk/asm/en-us",
+      "seed_urls": ["https://www.haitongetf.com.hk/asm/en-us"],
+      "discover_links": true,
+      "max_discovered_links": 25
+    },
+    {
+      "name": "博时基金(国际)",
+      "official_site": "https://www.bosera.com.hk/en-US/",
+      "seed_urls": ["https://www.bosera.com.hk/en-US/"],
+      "discover_links": true,
+      "max_discovered_links": 25
+    },
+    {
+      "name": "易方达资管(香港)",
+      "official_site": "https://www.efunds.com.hk/",
+      "seed_urls": ["https://www.efunds.com.hk/"],
+      "discover_links": true,
+      "max_discovered_links": 25
+    },
+    {
+      "name": "华夏基金(香港)",
+      "official_site": "https://www.chinaamc.com.hk/",
+      "seed_urls": ["https://www.chinaamc.com.hk/"],
+      "discover_links": true,
+      "max_discovered_links": 25
+    },
+    {
+      "name": "弘收资管(香港)",
+      "official_site": "https://www.incomepartners.com/",
+      "seed_urls": ["https://www.incomepartners.com/income-partners-asset-management-hk-ltd"],
+      "discover_links": true,
+      "max_discovered_links": 25
+    },
+    {
+      "name": "高腾国际资管",
+      "official_site": "https://www.gaotengasset.com/",
+      "seed_urls": ["https://www.gaotengasset.com/"],
+      "discover_links": true,
+      "max_discovered_links": 25
+    },
+    {
+      "name": "兴证国际资管",
+      "official_site": "https://www.xyzq.com.hk/",
+      "seed_urls": ["https://www.xyzq.com.hk/"],
+      "discover_links": true,
+      "max_discovered_links": 20
+    },
+    {
+      "name": "瑞银基金(卢森堡)",
+      "official_site": "https://www.ubs.com/hk/en/assetmanagement",
+      "seed_urls": ["https://www.ubs.com/hk/en/assetmanagement"],
+      "discover_links": true,
+      "max_discovered_links": 25
+    },
+    {
+      "name": "瑞银环球资管(香港)",
+      "official_site": "https://www.ubs.com/hk/en/assetmanagement",
+      "seed_urls": ["https://www.ubs.com/hk/en/assetmanagement"],
+      "discover_links": true,
+      "max_discovered_links": 25
+    },
+    {
+      "name": "南方东英资管",
+      "official_site": "https://www.csopasset.com/",
+      "seed_urls": ["https://www.csopasset.com/"],
+      "discover_links": true,
+      "max_discovered_links": 25
+    },
+    {
+      "name": "安联环球投资(亚太)",
+      "official_site": "https://hk.allianzgi.com/en-hk/retail",
+      "seed_urls": ["https://hk.allianzgi.com/en-hk/retail"],
+      "discover_links": true,
+      "max_discovered_links": 25
+    },
+    {
+      "name": "富达基金(香港)",
+      "official_site": "https://www.fidelity.com.hk/",
+      "seed_urls": ["https://www.fidelity.com.hk/"],
+      "discover_links": true,
+      "max_discovered_links": 25
+    },
+    {
+      "name": "贝莱德资管(北亚)",
+      "official_site": "https://www.blackrock.com/hk/en",
+      "seed_urls": ["https://www.blackrock.com/hk/en"],
+      "discover_links": true,
+      "max_discovered_links": 30
+    },
+    {
+      "name": "太平资管(香港)",
+      "official_site": "https://www.tpfh.cntaiping.com/",
+      "seed_urls": ["https://www.tpfh.cntaiping.com/"],
+      "discover_links": true,
+      "max_discovered_links": 20
+    },
+    {
+      "name": "百达资产管理(香港)",
+      "official_site": "https://www.am.pictet/",
+      "seed_urls": ["https://www.am.pictet/"],
+      "discover_links": true,
+      "max_discovered_links": 20
+    }
+  ]
+}
