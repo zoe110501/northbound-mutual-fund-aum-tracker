@@ -1,0 +1,663 @@
+{
+  "run_at_utc": "2026-04-29T02:35:04.307139+00:00",
+  "fx_as_of_date": "2026-04-29",
+  "results": [
+    {
+      "manager": "东亚联丰投资管理",
+      "official_site": "https://www.buim.com/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.buim.com/",
+        "https://www.buim.com/literature-download",
+        "https://www.buim.com/BU-MRF",
+        "https://www.buim.com/featured-funds",
+        "https://www.buim.com/featured-funds#ABC",
+        "https://www.buim.com/featured-funds#ASB",
+        "https://www.buim.com/fund-performance",
+        "https://www.buim.com/fund-price",
+        "https://www.buim.com/fund-updates",
+        "https://www.buim.com/historical-fund-price-dividend",
+        "https://www.buim.com/private-fund-price",
+        "https://www.buim.com/private-literature-download"
+      ],
+      "errors": [
+        "Fetch failed for https://www.buim.com/get_pdf.php?pdf=images%2Fdata%2FFund_Commentary%2F2026%2FABC_commentary_202601_EN_Final.pdf: Stream has ended unexpectedly",
+        "Fetch failed for https://www.buim.com/get_pdf.php?pdf=images%2Fdata%2FFund_Commentary%2F2026%2FABC_commentary_202604_EN_Final.pdf: Stream has ended unexpectedly",
+        "Fetch failed for https://www.buim.com/get_pdf.php?pdf=images%2Fdata%2FFund_Commentary%2F2026%2FAPM_commentary_202603_EN_Final.pdf: Stream has ended unexpectedly",
+        "Fetch failed for https://www.buim.com/get_pdf.php?pdf=images%2Fdata%2FFund_Commentary%2F2026%2FASB_commentary_202602_EN.pdf: Stream has ended unexpectedly",
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "东方汇理(香港)",
+      "official_site": "https://www.amundi.com.hk/retail",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.amundi.com.hk/retail/funds-hk",
+        "https://www.amundi.com.hk/retail/monthly-global-investment-views",
+        "https://www.amundi.com.hk/retail/funds",
+        "https://www.amundi.com.hk/retail/our-focus-funds",
+        "https://www.amundi.com.hk/retail/search-fund",
+        "https://www.amundi.com.hk/retail/usd-trajectory-trade-policies-economic-dynamics"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "中银保诚资管",
+      "official_site": "https://www.boci-pru.com.hk/english/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.boci-pru.com.hk/english/",
+        "https://www.boci-pru.com.hk/Doc/Fund_Monthly_Factsheet_E/E_FactSheet_03129.pdf",
+        "https://www.boci-pru.com.hk/Doc/Unit_Trust_Factsheet_E/BOC-CCGF_FS_E.pdf",
+        "https://www.boci-pru.com.hk/Doc/Unit_Trust_Factsheet_E/BOC-GEQ_FS_E.pdf",
+        "https://www.boci-pru.com.hk/Doc/Unit_Trust_Factsheet_E/BOC-HKDIF_FS_E.pdf",
+        "https://www.boci-pru.com.hk/Doc/Unit_Trust_Factsheet_E/BOCIP-CVF_FS_E.pdf",
+        "https://www.boci-pru.com.hk/en/ut-prices",
+        "https://www.boci-pru.com.hk/english/investinsight/",
+        "https://www.boci-pru.com.hk/english/ut/prices.aspx"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "中银香港资管",
+      "official_site": "https://www.bochkam.com/en/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.bochkam.com/en/",
+        "https://www.bochkam.com/en/fund-detail-auth-all-esg-multi-asset.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather-aphi.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather-asian-ex-japan.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather-asian-high-yield.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather-asian.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather-belt-and-road.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather-china-income.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather-china-new-dynamic.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather-cny-equity.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather-global-investment-grade.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather-greater-bay-area.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather-hkchn.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather-money-market.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather-rmb-money-market.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather-short-term.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather-usd-money-market.html",
+        "https://www.bochkam.com/en/fund-detail-auth-all-weather.html",
+        "https://www.bochkam.com/en/fund-detail-authorisedrmb.html"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "兴证国际资管",
+      "official_site": "https://www.xyzq.com.hk/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.xyzq.com.hk/"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "华夏基金(香港)",
+      "official_site": "https://www.chinaamc.com.hk/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.chinaamc.com.hk/",
+        "https://www.chinaamc.com.hk/wp-content/uploads/2025/08/ChinaAMC-HK-monthly-market-insights_202508.pdf",
+        "https://www.chinaamc.com.hk/wp-content/uploads/2025/10/ChinaAMC-HK-monthly-market-insights_202509.pdf",
+        "https://www.chinaamc.com.hk/wp-content/uploads/2025/11/ChinaAMC-HK-monthly-market-insights_202508.pdf",
+        "https://www.chinaamc.com.hk/wp-content/uploads/2026/03/ChinaAMC-HK-Announces-Deep-Partnership-with-Volcano-Engine_EN.pdf",
+        "https://www.chinaamc.com.hk/wp-content/uploads/2025/11/ChinaAMC-HK-Pioneers-247Tokenized-Fund-Transactions-in-Collaboration-with-Ant-International-and-Standard-Chartered-Bank_Final.pdf",
+        "https://www.chinaamc.com.hk/wp-content/uploads/2025/11/ChinaAMC-HK-Pioneers-Real-World-Tokenized-Fund-Subscription-with-partners-under-HKMAs-EnsembleTX_Final.pdf",
+        "https://www.chinaamc.com.hk/ETF/high_dividend_fund/en/index.html",
+        "https://www.chinaamc.com.hk/ETF/MMF/en/",
+        "https://www.chinaamc.com.hk/ETF/digitalassetetfsuite/en/",
+        "https://www.chinaamc.com.hk/investment-strategy/digitalassets/en/",
+        "https://www.chinaamc.com.hk/product-category/hong-kong-public-funds/",
+        "https://www.chinaamc.com.hk/product-category/private-funds/",
+        "https://www.chinaamc.com.hk/product-category/tokenized-funds/",
+        "https://www.chinaamc.com.hk/product-strategy/digital-assets/",
+        "https://www.chinaamc.com.hk/product-strategy/mixed-assets/",
+        "https://www.chinaamc.com.hk/product/chinaamc-china-focus-fund/",
+        "https://www.chinaamc.com.hk/product/chinaamc-china-opportunities-fund/",
+        "https://www.chinaamc.com.hk/product/chinaamc-global-investment-grade-bond-fund/",
+        "https://www.chinaamc.com.hk/product/chinaamc-select-fixed-income-allocation-fund/",
+        "https://www.chinaamc.com.hk/product/chinaamc-select-offshore-rmb-income-bond-fund/",
+        "https://www.chinaamc.com.hk/product/chinaamc-select-rmb-investment-grade-income-fund/"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "南方东英资管",
+      "official_site": "https://www.csopasset.com/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [],
+      "errors": [
+        "Link discovery failed for https://www.csopasset.com/: 403 Client Error: Forbidden for url: https://www.csopasset.com/",
+        "Fetch failed for https://www.csopasset.com/: 403 Client Error: Forbidden for url: https://www.csopasset.com/",
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "博时基金(国际)",
+      "official_site": "https://www.bosera.com.hk/en-US/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.bosera.com.hk/en-US/",
+        "https://www.bosera.com.hk/en-US/infos/education/detail/10614",
+        "https://www.bosera.com.hk/en-US/infos/news/detail/12445",
+        "https://www.bosera.com.hk/en-US/infos/news/detail/12323",
+        "https://www.bosera.com.hk/en-US/esg#report",
+        "https://www.bosera.com.hk/en-US/products/fund/detail/BGCER",
+        "https://www.bosera.com.hk/en-US/products/fund/detail/CSOEHIDVL",
+        "https://www.bosera.com.hk/en-US/products/fund/detail/HKDMMETF",
+        "https://www.bosera.com.hk/en-US/products/fund/detail/STAR50",
+        "https://www.bosera.com.hk/en-US/products/fund/detail/USDMMF",
+        "https://www.bosera.com.hk/en-US/products/list/etf",
+        "https://www.bosera.com.hk/en-US/products/list/hk",
+        "https://www.bosera.com.hk/en-US/products/list/io"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "太平资管(香港)",
+      "official_site": "https://www.tpfh.cntaiping.com/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.tpfh.cntaiping.com/"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "安联环球投资(亚太)",
+      "official_site": "https://hk.allianzgi.com/en-hk/retail",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://hk.allianzgi.com/en-hk/retail",
+        "https://hk.allianzgi.com/en-hk/retail/sustainability/sustainability-report-2024",
+        "https://hk.allianzgi.com/-/media/allianzgi/ap/hongkong/pdf/en/announcements/20220518-agihk-announcement-for-sfc-authorized-funds-en",
+        "https://hk.allianzgi.com/en-hk/financial-advisor/downloads/hk-fund-literature",
+        "https://hk.allianzgi.com/en-hk/financial-advisor?showForm=login-Screen",
+        "https://hk.allianzgi.com/en-hk/retail/capability/investment-capabilities-multi-asset",
+        "https://hk.allianzgi.com/en-hk/retail/downloads/hk-fund-literature",
+        "https://hk.allianzgi.com/en-hk/retail/insights/fund-commentary",
+        "https://hk.allianzgi.com/en-hk/retail/investor-education-landing/investment-basics/fund-investment-basics",
+        "https://hk.allianzgi.com/en-hk/retail/our-products/corporate-action/allianz-global-investors-fund",
+        "https://hk.allianzgi.com/en-hk/retail/our-products/fund-in-focus-landing",
+        "https://hk.allianzgi.com/en-hk/retail/our-products/fund-in-focus-landing/allianz-dynamic-multi-asset-strategy-sri",
+        "https://hk.allianzgi.com/en-hk/retail/our-products/fund-in-focus-landing/allianz-global-income-rdb",
+        "https://hk.allianzgi.com/en-hk/retail/our-products/fund-in-focus-landing/allianz-global-intelligent-cities-income-rdb",
+        "https://hk.allianzgi.com/en-hk/retail/our-products/fund-in-focus-landing/allianz-income-and-growth-fund-rdb",
+        "https://hk.allianzgi.com/en-hk/retail/our-products/fund-in-focus-landing/allianz-thematic-income-rdb",
+        "https://hk.allianzgi.com/en-hk/retail/products-solutions/retail-funds",
+        "https://hk.allianzgi.com/en-hk/retail/sustainability/policies-and-reporting",
+        "https://hk.allianzgi.com/en/retail/products-solutions/retail-funds?ShowTrackedFunds=true"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "富达基金(香港)",
+      "official_site": "https://www.fidelity.com.hk/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.fidelity.com.hk/"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "建银国际资管",
+      "official_site": "https://www.ccbintl.com.hk/English.html",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [],
+      "errors": [
+        "Link discovery failed for https://www.ccbintl.com.hk/English/management7.html: HTTPSConnectionPool(host='www.ccbintl.com.hk', port=443): Max retries exceeded with url: /English/management7.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+        "Fetch failed for https://www.ccbintl.com.hk/English/management7.html: HTTPSConnectionPool(host='www.ccbintl.com.hk', port=443): Max retries exceeded with url: /English/management7.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "弘收资管(香港)",
+      "official_site": "https://www.incomepartners.com/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.incomepartners.com/income-partners-asset-management-hk-ltd",
+        "https://www.incomepartners.com/products-solutions",
+        "https://www.incomepartners.com/products/public-funds-sfc-authorized",
+        "https://www.incomepartners.com/products/public-funds-sfc-authorized/income-partners-rmb-bond-fund",
+        "https://www.incomepartners.com/products/public-funds-sfc-authorized/managed-volatility-high-yield-bond-strategy-retail"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "恒生投资管理",
+      "official_site": "https://www.hangsenginvestment.com/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.hangsenginvestment.com/"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "惠理基金(香港)",
+      "official_site": "https://www.valuepartners-group.com/en/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.valuepartners-group.com/en/products-services/funds/",
+        "https://www.valuepartners-group.com/en/products-services/funds/fund-documents-hong-kong-retail-investors/",
+        "https://www.valuepartners-group.com/wp-content/uploads/2020/02/HKSFC_Factsheet_annual-performance_20191231.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/cg/001_fact_sheet/eng/cg_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vacb/001_fact_sheet/eng/vacb_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vaif/001_fact_sheet/eng/vaif_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vaio/001_fact_sheet/eng/vaio_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vatb/001_fact_sheet/eng/vatb_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vcas/001_fact_sheet/eng/vcas_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vhcfhk/001_fact_sheet/eng/vhcfhk_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vmeh/001_fact_sheet/eng/vmeh_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vmer/001_fact_sheet/eng/vmer_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vmeu/001_fact_sheet/eng/vmeu_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vpaf/001_fact_sheet/eng/vpaf_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vpca/001_fact_sheet/eng/vpca_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vpgb/001_fact_sheet/eng/vpgb_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vpgf/001_fact_sheet/eng/vpgf_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vphy/001_fact_sheet/eng/vphy_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vpjr/001_fact_sheet/eng/vpjr_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vpma/001_fact_sheet/eng/vpma_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vpmf/001_fact_sheet/eng/vpmf_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vpmm/001_fact_sheet/eng/vpmm_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vptf/001_fact_sheet/eng/vptf_fact_sheet_2026-03-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/dividends/dividend-history-composition.pdf",
+        "https://www.valuepartners-group.com/doc/promo/value-partners-fund-series-value-partners-asian-income-fund/en/",
+        "https://www.valuepartners-group.com/doc/promo/value-partners-high-dividend-stocks-fund/en/",
+        "https://www.valuepartners-group.com/en/about-us/awards/",
+        "https://www.valuepartners-group.com/en/investment-solutions/institutional-funds/china-convergence-fund/",
+        "https://www.valuepartners-group.com/en/investment-solutions/institutional-funds/chinese-mainland-focus-fund/",
+        "https://www.valuepartners-group.com/en/investment-solutions/institutional-funds/value-gold-etf-unlisted-class/",
+        "https://www.valuepartners-group.com/wp-content/uploads/2025/10/VP Choice Investment Funds - VPHE & VPHB_FS_final - 20250619.pdf",
+        "https://www.valuepartners-group.com/wp-content/uploads/2025/02/Value-Partners-Choice-Investment-Funds-Interim-Report-2024.pdf",
+        "https://www.valuepartners-group.com/en/products-services/",
+        "https://www.valuepartners-group.com/en/products-services/featuredfunds-en/",
+        "https://www.valuepartners-group.com/sc/products-services-sc/funds-sc/fund-documents-hong-kong-retail-investors-sc/",
+        "https://www.valuepartners-group.com/tc/products-services-tc/funds-tc/fund-documents-hong-kong-retail-investors-tc/"
+      ],
+      "errors": [
+        "Fetch failed for https://www.valuepartners-group.com/ftp/files/reports/hdlv/001_fact_sheet/eng/hdlv_fact_sheet_2026-01-01_en.pdf: 404 Client Error: Not Found for url: https://www.valuepartners-group.com/ftp/files/reports/hdlv/001_fact_sheet/eng/hdlv_fact_sheet_2026-01-01_en.pdf",
+        "Fetch failed for https://www.valuepartners-group.com/doc/notice/20170421_Notice_to_Investors_VP_Funds_Ongoing_Charges_E.pdf: 404 Client Error: Not Found for url: https://www.valuepartners-group.com/doc/notice/20170421_Notice_to_Investors_VP_Funds_Ongoing_Charges_E.pdf",
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "摩根基金(亚洲)",
+      "official_site": "https://am.jpmorgan.com/hk/en/asset-management/adv/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/about-us/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/about-us/diversity-inclusion/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/about-us/investment-stewardship/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/about-us/leadership/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/about-us/our-commitment-to-research/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/about-us/spectrum-our-investment-platform/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/complaints-handling/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/cookies-policy/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/fund-awards/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/fund-notes/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/active-etf/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/alternatives/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/asia-equity-high-income/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/china-equity-high-income/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/equity-high-income/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/equity/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/fixed-income-campaign/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/fixed-income/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/global-equity-high-income/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/multi-asset-solutions/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/guide-to-using-this-website/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/insights/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/insights/etf-insights/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/insights/etf-insights/guide-to-etfs/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/insights/investment-ideas/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/insights/investment-ideas/#ideas",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/insights/investment-ideas/#retirement",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/insights/investment-ideas/market-volatility-momentum/"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "摩根资管(亚太)",
+      "official_site": "https://am.jpmorgan.com/hk/en/asset-management/adv/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/about-us/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/about-us/diversity-inclusion/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/about-us/investment-stewardship/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/about-us/leadership/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/about-us/our-commitment-to-research/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/about-us/spectrum-our-investment-platform/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/complaints-handling/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/cookies-policy/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/fund-awards/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/fund-notes/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/active-etf/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/alternatives/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/asia-equity-high-income/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/china-equity-high-income/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/equity-high-income/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/equity/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/fixed-income-campaign/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/fixed-income/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/global-equity-high-income/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/funds/multi-asset-solutions/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/guide-to-using-this-website/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/insights/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/insights/etf-insights/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/insights/etf-insights/guide-to-etfs/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/insights/investment-ideas/",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/insights/investment-ideas/#ideas",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/insights/investment-ideas/#retirement",
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/insights/investment-ideas/market-volatility-momentum/"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "施罗德投资管理(香港)",
+      "official_site": "https://www.schroders.com/en-hk/hk/individual",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.schroders.com/en-hk/hk/individual",
+        "https://www.schroders.com/en-hk/hk/individual/insights/monthly-market-review/",
+        "https://www.schroders.com/en-hk/hk/individual/fund-centre/",
+        "https://www.schroders.com/en-hk/hk/individual/funds-and-strategies/",
+        "https://www.schroders.com/en-hk/hk/individual/funds-and-strategies/dealing-information/",
+        "https://www.schroders.com/en-hk/hk/individual/funds-and-strategies/forms/",
+        "https://www.schroders.com/en-hk/hk/individual/funds-and-strategies/funds-in-focus/",
+        "https://www.schroders.com/en-hk/hk/individual/funds-and-strategies/how-to-invest/",
+        "https://www.schroders.com/en-hk/hk/individual/funds-and-strategies/investing-in-credit-with-schroders/",
+        "https://www.schroders.com/en-hk/hk/individual/funds-and-strategies/investor-notice/",
+        "https://www.schroders.com/en-hk/hk/individual/funds-and-strategies/multi-asset/",
+        "https://www.schroders.com/en-hk/hk/individual/funds-and-strategies/new-cies/",
+        "https://www.schroders.com/en-hk/hk/individual/funds-and-strategies/notifications/",
+        "https://www.schroders.com/en-hk/hk/individual/funds-and-strategies/notifications/information-about-russian-securities-sisf-emerging-europe/",
+        "https://www.schroders.com/en-hk/hk/individual/funds-and-strategies/notifications/libor-transition/",
+        "https://www.schroders.com/en-hk/hk/individual/funds-and-strategies/notifications/statement-regarding-the-pricing-of-russian-securities-in-schroders-funds/",
+        "https://www.schroders.com/en-hk/hk/individual/funds-and-strategies/private-market-wealth-solutions/",
+        "https://www.schroders.com/en-hk/hk/individual/funds-and-strategies/thematics/",
+        "https://www.schroders.com/en-hk/hk/individual/retirement-services/fund-centre-ipf/",
+        "https://www.schroders.com/en-hk/hk/individual/retirement-services/fund-centre-orso/",
+        "https://www.schroders.com/en-hk/hk/individual/retirement-services/fund-centre-sisf/",
+        "https://www.schroders.com/en-hk/hk/individual/retirement-services/fund-centre-spp/",
+        "https://www.schroders.com/en-hk/hk/individual/what-we-do/multi-asset/",
+        "https://www.schroders.com/en-hk/hk/individual/what-we-do/private-assets-and-alternatives/"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "易方达资管(香港)",
+      "official_site": "https://www.efunds.com.hk/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.efunds.com.hk/",
+        "https://www.efunds.com.hk/aboutus",
+        "https://www.efunds.com.hk/products",
+        "https://www.efunds.com.hk/products?asset-class=equity",
+        "https://www.efunds.com.hk/products?asset-class=fixed_income",
+        "https://www.efunds.com.hk/products?asset-class=index"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "汇丰投资基金(香港)",
+      "official_site": "https://www.assetmanagement.hsbc.com.hk/en/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.assetmanagement.hsbc.com.hk/en/individual-investor",
+        "https://www.assetmanagement.hsbc.com.hk",
+        "https://www.assetmanagement.hsbc.com.hk/en/individual-investor#countrySwitcherNavTray",
+        "https://www.assetmanagement.hsbc.com.hk/en/individual-investor#investorTypeSwitcherNavTray",
+        "https://www.assetmanagement.hsbc.com.hk/en/individual-investor#primaryNavigation",
+        "https://www.assetmanagement.hsbc.com.hk/en/individual-investor/about-us/inclusion",
+        "https://www.assetmanagement.hsbc.com.hk/en/individual-investor/capabilities/multi-asset",
+        "https://www.assetmanagement.hsbc.com.hk/en/individual-investor/capabilities/mutual-recognition-funds",
+        "https://www.assetmanagement.hsbc.com.hk/en/individual-investor/fund-centre",
+        "https://www.assetmanagement.hsbc.com.hk/en/individual-investor/post-retirement-multi-asset-fund#openTab=0",
+        "https://www.assetmanagement.hsbc.com.hk/en/individual-investor/terms-and-conditions#disclaimer"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "海通国际资管(香港)",
+      "official_site": "https://www.haitongetf.com.hk/asm/en-us",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [],
+      "errors": [
+        "Link discovery failed for https://www.haitongetf.com.hk/asm/en-us: HTTPSConnectionPool(host='www.haitongetf.com.hk', port=443): Max retries exceeded with url: /asm/en-us (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.haitongetf.com.hk'. (_ssl.c:1010)\")))",
+        "Fetch failed for https://www.haitongetf.com.hk/asm/en-us: HTTPSConnectionPool(host='www.haitongetf.com.hk', port=443): Max retries exceeded with url: /asm/en-us (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.haitongetf.com.hk'. (_ssl.c:1010)\")))",
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "瑞银基金(卢森堡)",
+      "official_site": "https://www.ubs.com/hk/en/assetmanagement",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [],
+      "errors": [
+        "Link discovery failed for https://www.ubs.com/hk/en/assetmanagement: 403 Client Error: Forbidden for url: https://www.ubs.com/hk/en/assetmanagement",
+        "Fetch failed for https://www.ubs.com/hk/en/assetmanagement: 403 Client Error: Forbidden for url: https://www.ubs.com/hk/en/assetmanagement",
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "瑞银环球资管(香港)",
+      "official_site": "https://www.ubs.com/hk/en/assetmanagement",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [],
+      "errors": [
+        "Link discovery failed for https://www.ubs.com/hk/en/assetmanagement: 403 Client Error: Forbidden for url: https://www.ubs.com/hk/en/assetmanagement",
+        "Fetch failed for https://www.ubs.com/hk/en/assetmanagement: 403 Client Error: Forbidden for url: https://www.ubs.com/hk/en/assetmanagement",
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "百达资产管理(香港)",
+      "official_site": "https://www.am.pictet/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [],
+      "errors": [
+        "Link discovery failed for https://www.am.pictet/: 403 Client Error: Forbidden for url: https://www.am.pictet/",
+        "Fetch failed for https://www.am.pictet/: 403 Client Error: Forbidden for url: https://www.am.pictet/",
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "行健资管",
+      "official_site": "https://www.zealasset.com/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [],
+      "errors": [
+        "Link discovery failed for https://www.zealasset.com/en/about-us: HTTPSConnectionPool(host='www.zealasset.com', port=443): Max retries exceeded with url: /en/about-us (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+        "Fetch failed for https://www.zealasset.com/en/about-us: HTTPSConnectionPool(host='www.zealasset.com', port=443): Max retries exceeded with url: /en/about-us (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "贝莱德资管(北亚)",
+      "official_site": "https://www.blackrock.com/hk/en",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.blackrock.com/hk/en",
+        "https://www.blackrock.com/hk/en/literature?materialType=fact+sheet&brand=blackrock",
+        "https://www.blackrock.com/hk/en/literature?materialType=fact+sheet&brand=ishares",
+        "https://www.blackrock.com/hk/en/investment-ideas/asian-multi-asset-income-fund",
+        "https://www.blackrock.com/hk/en/investment-ideas/china-bond-fund",
+        "https://www.blackrock.com/hk/en/investment-ideas/dynamic-high-income-fund",
+        "https://www.blackrock.com/hk/en/investment-ideas/multi-asset",
+        "https://www.blackrock.com/hk/en/investment-ideas/retirement-hub",
+        "https://www.blackrock.com/hk/en/investment-ideas/systematic-global-equity-high-income-fund",
+        "https://www.blackrock.com/hk/en/literature?materialType=fund+in+focus&brand=blackrock",
+        "https://www.blackrock.com/hk/en/products/298076/blackrock-global-bond-income-fund",
+        "https://www.blackrock.com/hk/en/products/products-list",
+        "https://www.blackrock.com/hk/en/products/products-list#/?productView=mutualFund&style=44342|44341&dataView=perfNav",
+        "https://www.blackrock.com/hk/en/products/products-list#/?productView=mutualFund&style=44342|44341&fac=43511&dataView=perfNav",
+        "https://www.blackrock.com/hk/en/products/products-list#/?productView=mutualFund&style=44342|44341&fac=43515&dataView=perfNav",
+        "https://www.blackrock.com/hk/en/products/products-list#/?productView=mutualFund&style=44342|44341&fac=43521&dataView=perfNav",
+        "https://www.blackrock.com/institutions/en-axj/investment-capabilities-and-solutions/multi-asset-strategies",
+        "https://www.blackrock.com/institutions/en-axj/strategies/alternatives/hedge-funds"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    },
+    {
+      "manager": "高腾国际资管",
+      "official_site": "https://www.gaotengasset.com/",
+      "global_total_usd": 0,
+      "mainland_total_usd": 0,
+      "global_evidence": [],
+      "mainland_evidence": [],
+      "fetched_urls": [
+        "https://www.gaotengasset.com/",
+        "https://www.gaotengasset.com/media-report"
+      ],
+      "errors": [
+        "No global fund AUM evidence extracted.",
+        "No mainland share-class AUM evidence extracted."
+      ]
+    }
+  ]
+}
