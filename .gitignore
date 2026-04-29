@@ -7,6 +7,7 @@ __pycache__/
 .venv/
 tmp_outputs/
 tmp_outputs_*/
+tmp_adapter_*/
 tmp_debug_*/
 *.log
 tmp_*.pdf

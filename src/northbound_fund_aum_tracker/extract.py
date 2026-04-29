@@ -24,7 +24,7 @@ RELEVANT_LABEL_PATTERN = re.compile(
 )
 
 PROHIBITED_AMOUNT_CONTEXT_PATTERN = re.compile(
-    r"latest\s+nav|valuation date|isin|bloomberg|morningstar rating|quota|qfii|safe under|"
+    r"latest\s+nav|nav per unit|current nav|valuation date|isin|bloomberg|morningstar rating|quota|qfii|safe under|"
     r"award|best performer|asset manager of the year",
     re.IGNORECASE,
 )
@@ -76,10 +76,11 @@ def extract_amounts_for_target(
 ) -> list[ExtractedAmount]:
     normalized = normalize_text(text)
     windows: list[str] = []
+    lookahead = 5000 if source_url.lower().endswith(".pdf") else 1200
     for alias in target_aliases(target_name, extra_aliases):
         for match in re.finditer(re.escape(alias), normalized, flags=re.IGNORECASE):
             start = max(match.start() - 1200, 0)
-            end = min(match.end() + 1200, len(normalized))
+            end = min(match.end() + lookahead, len(normalized))
             windows.append(normalized[start:end])
 
     if not windows:
@@ -99,11 +100,11 @@ def extract_amounts_for_target(
             unit = match.group("unit") or match.group("unit2") or ""
             if not currency or not raw_amount:
                 continue
-            amount = parse_amount(raw_amount, unit)
+            amount = parse_amount(raw_amount, unit) * _implied_scale(window, match.start())
             if amount <= 0:
                 continue
             context = _context_around(window, match.start(), match.end())
-            if not _is_valid_amount_context(context):
+            if not _is_valid_amount_match(window, match.start(), required_term_groups):
                 continue
             key = (normalize_currency(currency), f"{amount:.4f}", context[:80])
             if key in seen:
@@ -124,7 +125,7 @@ def extract_amounts_for_target(
             for match in REPORT_LABEL_AMOUNT_PATTERN.finditer(window):
                 amount = parse_amount(match.group("amount"), "") * multiplier
                 context = _context_around(window, match.start(), match.end())
-                if not _is_valid_amount_context(context):
+                if not _is_valid_amount_context(context, required_term_groups):
                     continue
                 key = (scaled_currency, f"{amount:.4f}", context[:80])
                 if key in seen:
@@ -150,10 +151,34 @@ def _has_required_terms(window: str, required_term_groups: list[list[str]] | Non
     return all(any(term.lower() in normalized_window for term in group) for group in required_term_groups)
 
 
-def _is_valid_amount_context(context: str) -> bool:
+def _is_valid_amount_context(context: str, required_term_groups: list[list[str]] | None = None) -> bool:
     if PROHIBITED_AMOUNT_CONTEXT_PATTERN.search(context):
         return False
+    if not _has_required_terms(context, required_term_groups):
+        return False
     return bool(RELEVANT_LABEL_PATTERN.search(context))
+
+
+def _is_valid_amount_match(
+    window: str,
+    amount_start: int,
+    required_term_groups: list[list[str]] | None = None,
+) -> bool:
+    prefix = window[max(amount_start - 120, 0) : amount_start]
+    relevant_matches = list(RELEVANT_LABEL_PATTERN.finditer(prefix))
+    if not relevant_matches:
+        return False
+    prohibited_matches = list(PROHIBITED_AMOUNT_CONTEXT_PATTERN.finditer(prefix))
+    if prohibited_matches and prohibited_matches[-1].end() >= relevant_matches[-1].start():
+        return False
+    return _has_required_terms(_context_around(window, amount_start, amount_start), required_term_groups)
+
+
+def _implied_scale(window: str, amount_start: int) -> int:
+    prefix = window[max(amount_start - 120, 0) : amount_start].lower()
+    if re.search(r"fund size\s*\(m\)|total fund size\s*\(m\)|net assets\s*\(m\)", prefix):
+        return 1_000_000
+    return 1
 
 
 def parse_amount(raw_amount: str, unit: str) -> float:

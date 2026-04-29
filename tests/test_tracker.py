@@ -11,7 +11,6 @@ def test_share_class_term_groups_from_chinese_share_name():
         source_kind="mainland_share_class",
     )
     groups = share_class_term_groups(record)
-    assert ["PRC"] in groups
+    assert any("PRC" in group and "mainland" in group for group in groups)
     assert ["USD"] in groups
     assert ["acc", "accumulation", "accumulative", "累积", "累計", "累计"] in groups
-

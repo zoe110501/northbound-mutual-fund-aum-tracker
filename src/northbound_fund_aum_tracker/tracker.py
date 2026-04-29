@@ -8,6 +8,7 @@ from pathlib import Path
 
 import requests
 
+from .adapters import adapter_urls_for_manager
 from .extract import extract_amounts_for_target
 from .fetch import discover_candidate_links, fetch_text
 from .funds import group_by_manager
@@ -72,7 +73,7 @@ def scrape_manager(
     fx_client: FxClient,
 ) -> ManagerResult:
     result = ManagerResult(manager=source.name, official_site=source.official_site)
-    urls = list(dict.fromkeys(source.seed_urls))
+    urls = list(dict.fromkeys([*adapter_urls_for_manager(source.name, [*global_targets, *mainland_targets]), *source.seed_urls]))
     if source.discover_links:
         for seed_url in source.seed_urls:
             try:
@@ -156,7 +157,7 @@ def share_class_term_groups(target: FundRecord) -> list[list[str]]:
     if target.source_kind != "mainland_share_class":
         return []
     name = target.name.upper()
-    groups: list[list[str]] = []
+    groups: list[list[str]] = [["PRC", "mainland", "mutual recognition", "MRF", "内地", "內地"]]
     if "PRC" in name:
         groups.append(["PRC"])
     if "CNY" in name:

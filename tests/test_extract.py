@@ -114,3 +114,81 @@ def test_extract_does_not_treat_quota_as_fund_aum():
         extra_aliases=["E Fund (HK) Select Bond Fund"],
     )
     assert amounts == []
+
+
+def test_extract_keeps_fund_size_but_not_nav_per_unit_in_same_window():
+    text = """
+    Value Partners All China Bond Fund
+    NAV per unit : Class A USD Unhedged Acc - USD11.61
+    Fund size : USD43.9 million
+    """
+    amounts = extract_amounts_for_target(
+        text,
+        "惠理全中国债券基金",
+        "https://example.com/factsheet.pdf",
+        extra_aliases=["Value Partners All China Bond Fund"],
+    )
+    assert len(amounts) == 1
+    assert amounts[0].amount == 43_900_000
+
+
+def test_extract_applies_million_scale_from_fund_size_m_label():
+    text = """
+    JPMorgan Pacific Securities Fund
+    Fund Information ((acc) - USD)
+    Total fund size (m) USD 810.8
+    """
+    amounts = extract_amounts_for_target(
+        text,
+        "摩根太平洋证券基金",
+        "https://example.com/factsheet.pdf",
+        extra_aliases=["JPMorgan Pacific Securities Fund"],
+    )
+    assert len(amounts) == 1
+    assert amounts[0].amount == 810_800_000
+
+
+def test_extract_finds_factsheet_fund_size_far_after_name():
+    text = "JPMorgan Asian Total Return Bond Fund " + ("risk disclosure " * 250) + " Total fund size (m) USD 2,963.9"
+    amounts = extract_amounts_for_target(
+        text,
+        "摩根亚洲总收益债券基金",
+        "https://example.com/factsheet.pdf",
+        extra_aliases=["JPMorgan Asian Total Return Bond Fund"],
+    )
+    assert len(amounts) == 1
+    assert amounts[0].amount == 2_963_900_000
+
+
+def test_extract_does_not_copy_global_fund_size_to_mainland_share_class():
+    text = """
+    JPMorgan Pacific Technology Fund
+    Fund Information ((acc) - USD)
+    Fund base currency USD
+    Total fund size (m) USD 1,050.0
+    Denominated currencies USD HKD CNY
+    """
+    amounts = extract_amounts_for_target(
+        text,
+        "摩根太平洋科技基金CNY累计",
+        "https://example.com/factsheet.pdf",
+        extra_aliases=["JPMorgan Pacific Technology Fund"],
+        required_term_groups=[["PRC", "mainland", "MRF"], ["CNY"], ["acc"]],
+    )
+    assert amounts == []
+
+
+def test_extract_accepts_mainland_share_class_amount_when_terms_are_near_amount():
+    text = """
+    JPMorgan Pacific Technology Fund
+    PRC-USD Acc share class net assets USD 12.3 million
+    """
+    amounts = extract_amounts_for_target(
+        text,
+        "摩根太平洋科技基金USD累计",
+        "https://example.com/report.pdf",
+        extra_aliases=["JPMorgan Pacific Technology Fund"],
+        required_term_groups=[["PRC", "mainland", "MRF"], ["USD"], ["acc"]],
+    )
+    assert len(amounts) == 1
+    assert amounts[0].amount == 12_300_000
