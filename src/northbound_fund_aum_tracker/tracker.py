@@ -13,6 +13,7 @@ from .fetch import discover_candidate_links, fetch_text
 from .funds import group_by_manager
 from .fx import FxClient, fx_as_of_date
 from .models import FundRecord, ManagerResult, ManagerSource, MoneyEvidence
+from .report import write_excel_report
 
 
 def run_tracker(
@@ -57,6 +58,7 @@ def run_tracker(
     return {
         "run_at_utc": datetime.now(timezone.utc).isoformat(),
         "fx_as_of_date": fx_as_of_date(),
+        "fx_rates_to_usd": _fx_rates_for_output(fx_client),
         "results": [manager_result_to_dict(result) for result in results],
     }
 
@@ -154,13 +156,18 @@ def write_outputs(payload: dict, output_dir: Path) -> tuple[Path, Path, Path, Pa
     csv_path = output_dir / f"northbound_aum_{run_date}.csv"
     latest_json = output_dir / "latest.json"
     latest_csv = output_dir / "latest.csv"
+    xlsx_path = output_dir / f"northbound_aum_{run_date}.xlsx"
+    latest_xlsx = output_dir / "latest.xlsx"
 
     content = json.dumps(payload, ensure_ascii=False, indent=2)
     json_path.write_text(content, encoding="utf-8")
     latest_json.write_text(content, encoding="utf-8")
     write_csv(payload, csv_path)
     write_csv(payload, latest_csv)
-    return json_path, csv_path, latest_json, latest_csv
+    fund_data_path = Path(payload.get("fund_data_path") or "data/northbound_mutual_funds_20260427.json")
+    write_excel_report(payload, fund_data_path, xlsx_path, report_date=run_date)
+    write_excel_report(payload, fund_data_path, latest_xlsx, report_date=run_date)
+    return json_path, csv_path, latest_json, latest_csv, xlsx_path, latest_xlsx
 
 
 def write_csv(payload: dict, path: Path) -> None:
@@ -191,3 +198,12 @@ def write_csv(payload: dict, path: Path) -> None:
                 }
             )
 
+
+def _fx_rates_for_output(fx_client: FxClient) -> dict[str, float]:
+    rates = dict(fx_client.cache)
+    if "CNY" not in rates:
+        try:
+            rates["CNY"] = fx_client.rate_to_usd("CNY")
+        except Exception:  # noqa: BLE001 - JSON/CSV outputs can still be written
+            pass
+    return rates

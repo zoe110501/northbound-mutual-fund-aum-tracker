@@ -28,13 +28,10 @@ def main() -> None:
         manager_sources=manager_sources,
         selected_managers=selected_managers,
     )
-    json_path, csv_path, latest_json, latest_csv = write_outputs(payload, args.output_dir)
-    print(f"Wrote {json_path}")
-    print(f"Wrote {csv_path}")
-    print(f"Wrote {latest_json}")
-    print(f"Wrote {latest_csv}")
+    payload["fund_data_path"] = str(args.fund_data)
+    for path in write_outputs(payload, args.output_dir):
+        print(f"Wrote {path}")
 
 
 if __name__ == "__main__":
     main()
-
