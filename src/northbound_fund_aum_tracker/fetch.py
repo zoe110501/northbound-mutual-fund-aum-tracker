@@ -15,6 +15,7 @@ LINK_KEYWORDS = (
     "factsheet",
     "monthly",
     "report",
+    "document",
     "nav",
     "aum",
     "asset",
@@ -102,8 +103,14 @@ def _link_score(haystack: str, url: str) -> int:
         score += 20
     if any(keyword.lower() in haystack for keyword in REPORT_KEYWORDS):
         score += 100
+    elif "fund document" in haystack or "mrf" in haystack or "mutual recognition" in haystack:
+        score += 80
+    elif "fund explorer" in haystack or "retail fund" in haystack:
+        score += 50
     elif "factsheet" in haystack or "monthly" in haystack or "\u6708\u62a5" in haystack or "\u6708\u5831" in haystack:
         score += 30
+    if "about-us" in haystack or "leadership" in haystack:
+        score -= 20
     for year in re.findall(r"20\d{2}", haystack):
         score += int(year) - 2000
     return score

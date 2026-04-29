@@ -17,8 +17,15 @@ AMOUNT_PATTERN = re.compile(
 )
 
 RELEVANT_LABEL_PATTERN = re.compile(
-    r"AUM|asset under management|fund size|fund assets|net asset value|NAV|"
+    r"AUM|assets? under management|fund size|fund assets|total net assets|net assets|"
+    r"net asset value attributable|"
     r"资产净值|資產淨值|基金规模|基金規模|總資產|总资产|資產值|资产值",
+    re.IGNORECASE,
+)
+
+PROHIBITED_AMOUNT_CONTEXT_PATTERN = re.compile(
+    r"latest\s+nav|valuation date|isin|bloomberg|morningstar rating|quota|qfii|safe under|"
+    r"award|best performer|asset manager of the year",
     re.IGNORECASE,
 )
 
@@ -96,6 +103,8 @@ def extract_amounts_for_target(
             if amount <= 0:
                 continue
             context = _context_around(window, match.start(), match.end())
+            if not _is_valid_amount_context(context):
+                continue
             key = (normalize_currency(currency), f"{amount:.4f}", context[:80])
             if key in seen:
                 continue
@@ -115,6 +124,8 @@ def extract_amounts_for_target(
             for match in REPORT_LABEL_AMOUNT_PATTERN.finditer(window):
                 amount = parse_amount(match.group("amount"), "") * multiplier
                 context = _context_around(window, match.start(), match.end())
+                if not _is_valid_amount_context(context):
+                    continue
                 key = (scaled_currency, f"{amount:.4f}", context[:80])
                 if key in seen:
                     continue
@@ -137,6 +148,12 @@ def _has_required_terms(window: str, required_term_groups: list[list[str]] | Non
         return True
     normalized_window = window.lower()
     return all(any(term.lower() in normalized_window for term in group) for group in required_term_groups)
+
+
+def _is_valid_amount_context(context: str) -> bool:
+    if PROHIBITED_AMOUNT_CONTEXT_PATTERN.search(context):
+        return False
+    return bool(RELEVANT_LABEL_PATTERN.search(context))
 
 
 def parse_amount(raw_amount: str, unit: str) -> float:

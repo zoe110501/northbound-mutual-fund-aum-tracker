@@ -83,3 +83,34 @@ def test_extract_matches_share_class_when_required_terms_are_present():
     )
     assert len(amounts) == 1
     assert amounts[0].amount == 456_789_000
+
+
+def test_extract_does_not_treat_nav_prices_as_aum():
+    text = """
+    Value Partners Classic Fund
+    Share Classes Currency Latest NAV Valuation date
+    Class A HKD HKD 105.63 27-04-2026
+    Class A USD USD 17.28 27-04-2026
+    """
+    amounts = extract_amounts_for_target(
+        text,
+        "惠理价值基金",
+        "https://example.com/funds",
+        extra_aliases=["Value Partners Classic Fund"],
+    )
+    assert amounts == []
+
+
+def test_extract_does_not_treat_quota_as_fund_aum():
+    text = """
+    E Fund (HK) Select Bond Fund . Launched E Fund (HK) Greater China Leaders Fund .
+    Granted a quota of US$100 million by SAFE under the Qualified Foreign Institutional Investors program.
+    Company AuM and awards are described elsewhere on this page.
+    """
+    amounts = extract_amounts_for_target(
+        text,
+        "易方达精选策略系列易方达 (香港) 精选债券基金",
+        "https://example.com/aboutus",
+        extra_aliases=["E Fund (HK) Select Bond Fund"],
+    )
+    assert amounts == []
