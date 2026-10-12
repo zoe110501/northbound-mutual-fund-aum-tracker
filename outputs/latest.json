@@ -1,8 +1,8 @@
 {
-  "run_at_utc": "2026-10-05T07:00:30.301701+00:00",
-  "fx_as_of_date": "2026-10-05",
+  "run_at_utc": "2026-10-12T07:20:35.951933+00:00",
+  "fx_as_of_date": "2026-10-12",
   "fx_rates_to_usd": {
-    "CNY": 0.14915
+    "CNY": 0.14943
   },
   "results": [
     {
@@ -181,9 +181,9 @@
         "https://hk.allianzgi.com/en-hk/retail",
         "https://hk.allianzgi.com/en-hk/retail/sustainability/sustainability-report-2025",
         "https://hk.allianzgi.com/-/media/allianzgi/ap/hongkong/pdf/en/announcements/20220518-agihk-announcement-for-sfc-authorized-funds-en",
+        "https://hk.allianzgi.com/api/sitecore/Navigation/LanguageSwitcher?id=zh-HK&context={7B3C5961-216A-4249-9628-A8B51F11A31C}",
         "https://hk.allianzgi.com/en-hk/retail/capability/investment-capabilities-multi-asset",
-        "https://hk.allianzgi.com/en-hk/retail/downloads/hk-fund-literature",
-        "https://hk.allianzgi.com/en-hk/retail/insights/fund-commentary"
+        "https://hk.allianzgi.com/en-hk/retail/downloads/hk-fund-literature"
       ],
       "errors": [
         "No global fund AUM evidence extracted.",
@@ -271,11 +271,11 @@
         "https://www.valuepartners-group.com/ftp/files/reports/vaif/001_fact_sheet/eng/vaif_fact_sheet_2026-08-01_en.pdf",
         "https://www.valuepartners-group.com/ftp/files/reports/vaio/001_fact_sheet/eng/vaio_fact_sheet_2026-08-01_en.pdf",
         "https://www.valuepartners-group.com/wp-content/uploads/2025/10/VP Choice Investment Funds - VPHE & VPHB_FS_final - 20250619.pdf",
-        "https://www.valuepartners-group.com/wp-content/uploads/2025/02/Value-Partners-Choice-Investment-Funds-Interim-Report-2024.pdf",
-        "https://www.valuepartners-group.com/en/products-services/"
+        "https://www.valuepartners-group.com/wp-content/uploads/2025/02/Value-Partners-Choice-Investment-Funds-Interim-Report-2024.pdf"
       ],
       "errors": [
         "Fetch failed for https://www.valuepartners-group.com/doc/notice/20170421_Notice_to_Investors_VP_Funds_Ongoing_Charges_E.pdf: 404 Client Error: Not Found for url: https://www.valuepartners-group.com/doc/notice/20170421_Notice_to_Investors_VP_Funds_Ongoing_Charges_E.pdf",
+        "Fetch failed for https://www.valuepartners-group.com/en/products-services/: 500 Server Error: Internal Server Error for url: https://www.valuepartners-group.com/en/products-services/funds/",
         "No global fund AUM evidence extracted.",
         "No mainland share-class AUM evidence extracted."
       ]
@@ -283,7 +283,7 @@
     {
       "manager": "摩根基金(亚洲)",
       "official_site": "https://am.jpmorgan.com/hk/en/asset-management/adv/",
-      "global_total_usd": 11701000000.0,
+      "global_total_usd": 12063400000.0,
       "mainland_total_usd": 0,
       "global_evidence": [
         {
@@ -328,13 +328,13 @@
         },
         {
           "target_name": "摩根太平洋科技基金",
-          "amount": 1805500000.0,
+          "amount": 2167900000.0,
           "currency": "USD",
-          "amount_usd": 1805500000.0,
+          "amount_usd": 2167900000.0,
           "fx_rate_to_usd": 1.0,
           "source_url": "https://am.jpmorgan.com/content/dam/jpm-am-aem/asiapacific/hk/en/literature/fact-sheet/jpmorgan_pacific_tech_e.pdf",
           "label": "fund size",
-          "context": "he Pacific region, including Japan. Expertise Fund Manager Oliver Cox, Ruben Lienhard Fund Information ((acc) - USD) Fund base currency USD Total fund size (m) USD 1,805.5 SEDOL B42H374 ISIN code HK0000055761 Bloomberg code JFPTECI HK Current charge Initial : 5.0% of NAV Redemption : 0% Management fee : 1.5% p.a. Denominated curre"
+          "context": "he Pacific region, including Japan. Expertise Fund Manager Oliver Cox, Ruben Lienhard Fund Information ((acc) - USD) Fund base currency USD Total fund size (m) USD 2,167.9 SEDOL B42H374 ISIN code HK0000055761 Bloomberg code JFPTECI HK Current charge Initial : 5.0% of NAV Redemption : 0% Management fee : 1.5% p.a. Denominated curre"
         },
         {
           "target_name": "摩根亚洲增长基金",
