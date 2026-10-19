@@ -1,8 +1,8 @@
 {
-  "run_at_utc": "2026-10-12T07:20:35.951933+00:00",
-  "fx_as_of_date": "2026-10-12",
+  "run_at_utc": "2026-10-19T06:10:20.387406+00:00",
+  "fx_as_of_date": "2026-10-19",
   "fx_rates_to_usd": {
-    "CNY": 0.14943
+    "CNY": 0.14956
   },
   "results": [
     {
@@ -265,17 +265,17 @@
         "https://www.valuepartners-group.com/en/products-services/funds/",
         "https://www.valuepartners-group.com/en/products-services/funds/fund-documents-hong-kong-retail-investors/",
         "https://www.valuepartners-group.com/wp-content/uploads/2020/02/HKSFC_Factsheet_annual-performance_20191231.pdf",
-        "https://www.valuepartners-group.com/ftp/files/reports/cg/001_fact_sheet/eng/cg_fact_sheet_2026-08-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/cg/001_fact_sheet/eng/cg_fact_sheet_2026-09-01_en.pdf",
         "https://www.valuepartners-group.com/ftp/files/reports/hdlv/001_fact_sheet/eng/hdlv_fact_sheet_2026-08-01_en.pdf",
-        "https://www.valuepartners-group.com/ftp/files/reports/vacb/001_fact_sheet/eng/vacb_fact_sheet_2026-08-01_en.pdf",
-        "https://www.valuepartners-group.com/ftp/files/reports/vaif/001_fact_sheet/eng/vaif_fact_sheet_2026-08-01_en.pdf",
-        "https://www.valuepartners-group.com/ftp/files/reports/vaio/001_fact_sheet/eng/vaio_fact_sheet_2026-08-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vacb/001_fact_sheet/eng/vacb_fact_sheet_2026-09-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vaif/001_fact_sheet/eng/vaif_fact_sheet_2026-09-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vaio/001_fact_sheet/eng/vaio_fact_sheet_2026-09-01_en.pdf",
         "https://www.valuepartners-group.com/wp-content/uploads/2025/10/VP Choice Investment Funds - VPHE & VPHB_FS_final - 20250619.pdf",
-        "https://www.valuepartners-group.com/wp-content/uploads/2025/02/Value-Partners-Choice-Investment-Funds-Interim-Report-2024.pdf"
+        "https://www.valuepartners-group.com/wp-content/uploads/2025/02/Value-Partners-Choice-Investment-Funds-Interim-Report-2024.pdf",
+        "https://www.valuepartners-group.com/en/products-services/"
       ],
       "errors": [
         "Fetch failed for https://www.valuepartners-group.com/doc/notice/20170421_Notice_to_Investors_VP_Funds_Ongoing_Charges_E.pdf: 404 Client Error: Not Found for url: https://www.valuepartners-group.com/doc/notice/20170421_Notice_to_Investors_VP_Funds_Ongoing_Charges_E.pdf",
-        "Fetch failed for https://www.valuepartners-group.com/en/products-services/: 500 Server Error: Internal Server Error for url: https://www.valuepartners-group.com/en/products-services/funds/",
         "No global fund AUM evidence extracted.",
         "No mainland share-class AUM evidence extracted."
       ]
