@@ -1,8 +1,8 @@
 {
-  "run_at_utc": "2026-10-26T06:08:46.809480+00:00",
-  "fx_as_of_date": "2026-10-26",
+  "run_at_utc": "2026-11-02T07:40:08.732614+00:00",
+  "fx_as_of_date": "2026-11-02",
   "fx_rates_to_usd": {
-    "CNY": 0.14992
+    "CNY": 0.15031
   },
   "results": [
     {
@@ -15,13 +15,13 @@
       "fetched_urls": [
         "https://www.buim.com/",
         "https://www.buim.com/BU-MRF",
+        "https://www.buim.com/get_pdf.php?pdf=images%2Fdata%2FFund_Commentary%2F2026%2FABC_commentary_202610_EN_Final.pdf",
+        "https://www.buim.com/get_pdf.php?pdf=images%2Fdata%2FFund_Commentary%2F2026%2FAPM_commentary_202609_EN_Final.pdf",
+        "https://www.buim.com/get_pdf.php?pdf=images%2Fdata%2FFund_Commentary%2F2026%2FASB_commentary_202608_EN.pdf",
         "https://www.buim.com/literature-download",
         "https://www.buim.com/featured-funds"
       ],
       "errors": [
-        "Fetch failed for https://www.buim.com/get_pdf.php?pdf=images%2Fdata%2FFund_Commentary%2F2026%2FABC_commentary_202607_EN_Final.pdf: Stream has ended unexpectedly",
-        "Fetch failed for https://www.buim.com/get_pdf.php?pdf=images%2Fdata%2FFund_Commentary%2F2026%2FAPM_commentary_202609_EN_Final.pdf: Stream has ended unexpectedly",
-        "Fetch failed for https://www.buim.com/get_pdf.php?pdf=images%2Fdata%2FFund_Commentary%2F2026%2FASB_commentary_202608_EN.pdf: Stream has ended unexpectedly",
         "No global fund AUM evidence extracted.",
         "No mainland share-class AUM evidence extracted."
       ]
@@ -54,16 +54,10 @@
       "mainland_total_usd": 0,
       "global_evidence": [],
       "mainland_evidence": [],
-      "fetched_urls": [
-        "https://www.boci-pru.com.hk/english/",
-        "https://www.boci-pru.com.hk/Doc/Fund_Monthly_Factsheet_E/E_FactSheet_03129.pdf",
-        "https://www.boci-pru.com.hk/Doc/Unit_Trust_Factsheet_E/BOC-CCGF_FS_E.pdf",
-        "https://www.boci-pru.com.hk/Doc/Unit_Trust_Factsheet_E/BOC-GEQ_FS_E.pdf",
-        "https://www.boci-pru.com.hk/Doc/Unit_Trust_Factsheet_E/BOC-HKDIF_FS_E.pdf",
-        "https://www.boci-pru.com.hk/Doc/Unit_Trust_Factsheet_E/BOCIP-CVF_FS_E.pdf",
-        "https://www.boci-pru.com.hk/en/ut-prices"
-      ],
+      "fetched_urls": [],
       "errors": [
+        "Link discovery failed for https://www.boci-pru.com.hk/english/: HTTPSConnectionPool(host='www.boci-pru.com.hk', port=443): Max retries exceeded with url: /english/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+        "Fetch failed for https://www.boci-pru.com.hk/english/: HTTPSConnectionPool(host='www.boci-pru.com.hk', port=443): Max retries exceeded with url: /english/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
         "No global fund AUM evidence extracted.",
         "No mainland share-class AUM evidence extracted."
       ]
@@ -264,12 +258,17 @@
       "fetched_urls": [
         "https://www.valuepartners-group.com/en/products-services/funds/",
         "https://www.valuepartners-group.com/en/products-services/funds/fund-documents-hong-kong-retail-investors/",
+        "https://www.valuepartners-group.com/wp-content/uploads/2020/02/HKSFC_Factsheet_annual-performance_20191231.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/cg/001_fact_sheet/eng/cg_fact_sheet_2026-09-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/hdlv/001_fact_sheet/eng/hdlv_fact_sheet_2026-09-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vacb/001_fact_sheet/eng/vacb_fact_sheet_2026-09-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vaif/001_fact_sheet/eng/vaif_fact_sheet_2026-09-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/vaio/001_fact_sheet/eng/vaio_fact_sheet_2026-09-01_en.pdf",
         "https://www.valuepartners-group.com/wp-content/uploads/2025/10/VP Choice Investment Funds - VPHE & VPHB_FS_final - 20250619.pdf",
         "https://www.valuepartners-group.com/wp-content/uploads/2025/02/Value-Partners-Choice-Investment-Funds-Interim-Report-2024.pdf",
         "https://www.valuepartners-group.com/en/products-services/"
       ],
       "errors": [
-        "Link discovery failed for https://www.valuepartners-group.com/en/products-services/funds/: HTTPSConnectionPool(host='www.valuepartners-group.com', port=443): Read timed out. (read timeout=15)",
         "Fetch failed for https://www.valuepartners-group.com/doc/notice/20170421_Notice_to_Investors_VP_Funds_Ongoing_Charges_E.pdf: 404 Client Error: Not Found for url: https://www.valuepartners-group.com/doc/notice/20170421_Notice_to_Investors_VP_Funds_Ongoing_Charges_E.pdf",
         "No global fund AUM evidence extracted.",
         "No mainland share-class AUM evidence extracted."
@@ -278,68 +277,68 @@
     {
       "manager": "摩根基金(亚洲)",
       "official_site": "https://am.jpmorgan.com/hk/en/asset-management/adv/",
-      "global_total_usd": 12063400000.0,
+      "global_total_usd": 11645600000.0,
       "mainland_total_usd": 0,
       "global_evidence": [
         {
           "target_name": "摩根亚洲总收益债券基金",
-          "amount": 2309900000.0,
+          "amount": 2177300000.0,
           "currency": "USD",
-          "amount_usd": 2309900000.0,
+          "amount_usd": 2177300000.0,
           "fx_rate_to_usd": 1.0,
           "source_url": "https://am.jpmorgan.com/content/dam/jpm-am-aem/asiapacific/hk/en/literature/fact-sheet/jpmorgan_asian_total_return_bond_e.pdf",
           "label": "fund size",
-          "context": " other debt securities. Expertise Fund Manager Julio Callegari, Jason Pang, Selina Yu Fund Information ((mth) - USD) Fund base currency USD Total fund size (m) USD 2,309.9 SEDOL B42HMC2 ISIN code HK0000055597 Bloomberg code JFASTRE HK Current charge Initial : 3.0% of NAV Redemption : 0% Management fee : 1.0% p.a. Denominated curre"
+          "context": " other debt securities. Expertise Fund Manager Julio Callegari, Jason Pang, Selina Yu Fund Information ((mth) - USD) Fund base currency USD Total fund size (m) USD 2,177.3 SEDOL B42HMC2 ISIN code HK0000055597 Bloomberg code JFASTRE HK Current charge Initial : 3.0% of NAV Redemption : 0% Management fee : 1.0% p.a. Denominated curre"
         },
         {
           "target_name": "摩根太平洋证券基金",
-          "amount": 759700000.0,
+          "amount": 745700000.0,
           "currency": "USD",
-          "amount_usd": 759700000.0,
+          "amount_usd": 745700000.0,
           "fx_rate_to_usd": 1.0,
           "source_url": "https://am.jpmorgan.com/content/dam/jpm-am-aem/asiapacific/hk/en/literature/fact-sheet/jpmorgan_pacific_securities_e.pdf",
           "label": "fund size",
-          "context": "g Japan, Australia and New Zealand. Expertise Fund Manager Robert Lloyd, Chun Yu Wong Fund Information ((acc) - USD) Fund base currency USD Total fund size (m) USD 759.7 SEDOL B42GYV2 ISIN code HK0000055746 Bloomberg code JFPACSI HK Current charge Initial : 5.0% of NAV Redemption : 0% Management fee : 1.5% p.a. Denominated curre"
+          "context": "ng Japan, Australia and New Zealand. Expertise Fund Manager Robert Lloyd, Aisa Ogoshi Fund Information ((acc) - USD) Fund base currency USD Total fund size (m) USD 745.7 SEDOL B42GYV2 ISIN code HK0000055746 Bloomberg code JFPACSI HK Current charge Initial : 5.0% of NAV Redemption : 0% Management fee : 1.5% p.a. Denominated curre"
         },
         {
           "target_name": "摩根亚洲股息基金",
-          "amount": 3523500000.0,
+          "amount": 3515300000.0,
           "currency": "USD",
-          "amount_usd": 3523500000.0,
+          "amount_usd": 3515300000.0,
           "fx_rate_to_usd": 1.0,
           "source_url": "https://am.jpmorgan.com/content/dam/jpm-am-aem/asiapacific/hk/en/literature/fact-sheet/jpmorgan_asia_equity_dividend_e.pdf",
           "label": "fund size",
-          "context": "ent manager expects to pay dividends. Expertise Fund Manager Julie Ho, Ruben Lienhard Fund Information ((mth) - USD) Fund base currency USD Total fund size (m) USD 3,523.5 SEDOL BBMT4W1 ISIN code HK0000151891 Bloomberg code JPAEDUS HK Current charge Initial : 5.0% of NAV Redemption : 0% Management fee : 1.5% p.a. Denominated curre"
+          "context": "ent manager expects to pay dividends. Expertise Fund Manager Julie Ho, Ruben Lienhard Fund Information ((mth) - USD) Fund base currency USD Total fund size (m) USD 3,515.3 SEDOL BBMT4W1 ISIN code HK0000151891 Bloomberg code JPAEDUS HK Current charge Initial : 5.0% of NAV Redemption : 0% Management fee : 1.5% p.a. Denominated curre"
         },
         {
           "target_name": "摩根国际债券基金",
-          "amount": 2282300000.0,
+          "amount": 2010600000.0,
           "currency": "USD",
-          "amount_usd": 2282300000.0,
+          "amount_usd": 2010600000.0,
           "fx_rate_to_usd": 1.0,
           "source_url": "https://am.jpmorgan.com/content/dam/jpm-am-aem/asiapacific/hk/en/literature/fact-sheet/jpmorgan_global_bond_e.pdf",
           "label": "fund size",
-          "context": "global investment grade debt securities. Expertise Fund Manager Arjun Vij, Jason Pang Fund Information ((san) - USD) Fund base currency USD Total fund size (m) USD 2,282.3 SEDOL B42HQ19 ISIN code HK0000055654 Bloomberg code JFGLBTI HK Current charge Initial : 3.0% of NAV Redemption : 0% Management fee : 0.8% p.a. Denominated curre"
+          "context": "global investment grade debt securities. Expertise Fund Manager Arjun Vij, Jason Pang Fund Information ((san) - USD) Fund base currency USD Total fund size (m) USD 2,010.6 SEDOL B42HQ19 ISIN code HK0000055654 Bloomberg code JFGLBTI HK Current charge Initial : 3.0% of NAV Redemption : 0% Management fee : 0.8% p.a. Denominated curre"
         },
         {
           "target_name": "摩根太平洋科技基金",
-          "amount": 2167900000.0,
+          "amount": 2072300000.0000002,
           "currency": "USD",
-          "amount_usd": 2167900000.0,
+          "amount_usd": 2072300000.0000002,
           "fx_rate_to_usd": 1.0,
           "source_url": "https://am.jpmorgan.com/content/dam/jpm-am-aem/asiapacific/hk/en/literature/fact-sheet/jpmorgan_pacific_tech_e.pdf",
           "label": "fund size",
-          "context": "he Pacific region, including Japan. Expertise Fund Manager Oliver Cox, Ruben Lienhard Fund Information ((acc) - USD) Fund base currency USD Total fund size (m) USD 2,167.9 SEDOL B42H374 ISIN code HK0000055761 Bloomberg code JFPTECI HK Current charge Initial : 5.0% of NAV Redemption : 0% Management fee : 1.5% p.a. Denominated curre"
+          "context": "he Pacific region, including Japan. Expertise Fund Manager Oliver Cox, Ruben Lienhard Fund Information ((acc) - USD) Fund base currency USD Total fund size (m) USD 2,072.3 SEDOL B42H374 ISIN code HK0000055761 Bloomberg code JFPTECI HK Current charge Initial : 5.0% of NAV Redemption : 0% Management fee : 1.5% p.a. Denominated curre"
         },
         {
           "target_name": "摩根亚洲增长基金",
-          "amount": 1020100000.0,
+          "amount": 1124400000.0,
           "currency": "USD",
-          "amount_usd": 1020100000.0,
+          "amount_usd": 1124400000.0,
           "fx_rate_to_usd": 1.0,
           "source_url": "https://am.jpmorgan.com/content/dam/jpm-am-aem/asiapacific/hk/en/literature/fact-sheet/jpmorgan_asia_growth_e.pdf",
           "label": "fund size",
-          "context": "owth in Asian economies. Expertise Fund Manager Joanna Kwok, Desmond Loh, Mark Davids Fund Information ((acc) - USD) Fund base currency USD Total fund size (m) USD 1,020.1 SEDOL B1XDC06 ISIN code HK0000038148 Bloomberg code JFASDOM HK Current charge Initial : 5.0% of NAV Redemption : 0% Management fee : 1.5% p.a. Denominated curre"
+          "context": "owth in Asian economies. Expertise Fund Manager Joanna Kwok, Desmond Loh, Mark Davids Fund Information ((acc) - USD) Fund base currency USD Total fund size (m) USD 1,124.4 SEDOL B1XDC06 ISIN code HK0000038148 Bloomberg code JFASDOM HK Current charge Initial : 5.0% of NAV Redemption : 0% Management fee : 1.5% p.a. Denominated curre"
         }
       ],
       "mainland_evidence": [],
@@ -369,6 +368,7 @@
       "global_evidence": [],
       "mainland_evidence": [],
       "fetched_urls": [
+        "https://am.jpmorgan.com/hk/en/asset-management/adv/",
         "https://am.jpmorgan.com/hk/en/asset-management/adv/products/fund-documents/",
         "https://am.jpmorgan.com/hk/en/asset-management/adv/products/fund-explorer/mainland-hk-mrf-funds",
         "https://am.jpmorgan.com/hk/en/asset-management/adv/insights/market-insights/mid-year-outlook-2026/",
@@ -377,7 +377,6 @@
       ],
       "errors": [
         "Fetch failed for https://am.jpmorgan.com/content/dam/jpm-am-aem/asiapacific/hk/en/literature/fact-sheet/jpmorgan_sar_hong_kong_e.pdf: 404 Client Error: Not Found for url: https://am.jpmorgan.com/content/dam/jpm-am-aem/asiapacific/hk/en/literature/fact-sheet/jpmorgan_sar_hong_kong_e.pdf",
-        "Fetch failed for https://am.jpmorgan.com/hk/en/asset-management/adv/: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
         "No global fund AUM evidence extracted.",
         "No mainland share-class AUM evidence extracted."
       ]
