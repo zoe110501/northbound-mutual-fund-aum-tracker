@@ -1,8 +1,8 @@
 {
-  "run_at_utc": "2026-11-02T07:40:08.732614+00:00",
-  "fx_as_of_date": "2026-11-02",
+  "run_at_utc": "2026-11-09T07:55:54.116418+00:00",
+  "fx_as_of_date": "2026-11-09",
   "fx_rates_to_usd": {
-    "CNY": 0.15031
+    "CNY": 0.1499
   },
   "results": [
     {
@@ -54,10 +54,16 @@
       "mainland_total_usd": 0,
       "global_evidence": [],
       "mainland_evidence": [],
-      "fetched_urls": [],
+      "fetched_urls": [
+        "https://www.boci-pru.com.hk/english/",
+        "https://www.boci-pru.com.hk/Doc/Fund_Monthly_Factsheet_E/E_FactSheet_03129.pdf",
+        "https://www.boci-pru.com.hk/Doc/Unit_Trust_Factsheet_E/BOC-CCGF_FS_E.pdf",
+        "https://www.boci-pru.com.hk/Doc/Unit_Trust_Factsheet_E/BOC-GEQ_FS_E.pdf",
+        "https://www.boci-pru.com.hk/Doc/Unit_Trust_Factsheet_E/BOC-HKDIF_FS_E.pdf",
+        "https://www.boci-pru.com.hk/Doc/Unit_Trust_Factsheet_E/BOCIP-CVF_FS_E.pdf",
+        "https://www.boci-pru.com.hk/en/ut-prices"
+      ],
       "errors": [
-        "Link discovery failed for https://www.boci-pru.com.hk/english/: HTTPSConnectionPool(host='www.boci-pru.com.hk', port=443): Max retries exceeded with url: /english/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
-        "Fetch failed for https://www.boci-pru.com.hk/english/: HTTPSConnectionPool(host='www.boci-pru.com.hk', port=443): Max retries exceeded with url: /english/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
         "No global fund AUM evidence extracted.",
         "No mainland share-class AUM evidence extracted."
       ]
@@ -208,8 +214,8 @@
       "mainland_evidence": [],
       "fetched_urls": [],
       "errors": [
-        "Link discovery failed for https://www.ccbintl.com.hk/English/management7.html: HTTPSConnectionPool(host='www.ccbintl.com.hk', port=443): Max retries exceeded with url: /English/management7.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
-        "Fetch failed for https://www.ccbintl.com.hk/English/management7.html: HTTPSConnectionPool(host='www.ccbintl.com.hk', port=443): Max retries exceeded with url: /English/management7.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))",
+        "Link discovery failed for https://www.ccbintl.com.hk/English/management7.html: HTTPSConnectionPool(host='www.ccbintl.com.hk', port=443): Max retries exceeded with url: /English/management7.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))",
+        "Fetch failed for https://www.ccbintl.com.hk/English/management7.html: HTTPSConnectionPool(host='www.ccbintl.com.hk', port=443): Max retries exceeded with url: /English/management7.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))",
         "No global fund AUM evidence extracted.",
         "No mainland share-class AUM evidence extracted."
       ]
@@ -452,8 +458,8 @@
       "mainland_evidence": [],
       "fetched_urls": [],
       "errors": [
-        "Link discovery failed for https://www.haitongetf.com.hk/asm/en-us: HTTPSConnectionPool(host='www.haitongetf.com.hk', port=443): Max retries exceeded with url: /asm/en-us (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.haitongetf.com.hk'. (_ssl.c:1010)\")))",
-        "Fetch failed for https://www.haitongetf.com.hk/asm/en-us: HTTPSConnectionPool(host='www.haitongetf.com.hk', port=443): Max retries exceeded with url: /asm/en-us (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.haitongetf.com.hk'. (_ssl.c:1010)\")))",
+        "Link discovery failed for https://www.haitongetf.com.hk/asm/en-us: HTTPSConnectionPool(host='www.haitongetf.com.hk', port=443): Max retries exceeded with url: /asm/en-us (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.haitongetf.com.hk'. (_ssl.c:1011)\")))",
+        "Fetch failed for https://www.haitongetf.com.hk/asm/en-us: HTTPSConnectionPool(host='www.haitongetf.com.hk', port=443): Max retries exceeded with url: /asm/en-us (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.haitongetf.com.hk'. (_ssl.c:1011)\")))",
         "No global fund AUM evidence extracted.",
         "No mainland share-class AUM evidence extracted."
       ]
@@ -512,8 +518,8 @@
       "mainland_evidence": [],
       "fetched_urls": [],
       "errors": [
-        "Link discovery failed for https://www.zealasset.com/en/about-us: HTTPSConnectionPool(host='www.zealasset.com', port=443): Max retries exceeded with url: /en/about-us (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
-        "Fetch failed for https://www.zealasset.com/en/about-us: HTTPSConnectionPool(host='www.zealasset.com', port=443): Max retries exceeded with url: /en/about-us (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+        "Link discovery failed for https://www.zealasset.com/en/about-us: HTTPSConnectionPool(host='www.zealasset.com', port=443): Max retries exceeded with url: /en/about-us (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))",
+        "Fetch failed for https://www.zealasset.com/en/about-us: HTTPSConnectionPool(host='www.zealasset.com', port=443): Max retries exceeded with url: /en/about-us (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))",
         "No global fund AUM evidence extracted.",
         "No mainland share-class AUM evidence extracted."
       ]
