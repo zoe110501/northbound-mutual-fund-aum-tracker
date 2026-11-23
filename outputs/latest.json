@@ -1,8 +1,8 @@
 {
-  "run_at_utc": "2026-11-16T07:58:09.456358+00:00",
-  "fx_as_of_date": "2026-11-16",
+  "run_at_utc": "2026-11-23T08:59:57.398832+00:00",
+  "fx_as_of_date": "2026-11-23",
   "fx_rates_to_usd": {
-    "CNY": 0.14988
+    "CNY": 0.14975
   },
   "results": [
     {
@@ -212,10 +212,15 @@
       "mainland_total_usd": 0,
       "global_evidence": [],
       "mainland_evidence": [],
-      "fetched_urls": [],
+      "fetched_urls": [
+        "https://www.ccbintl.com.hk/English/management7.html",
+        "https://www.ccbintl.com.hk/English/management3.html",
+        "https://www.ccbintl.com.hk/English/management4.html",
+        "https://www.ccbintl.com.hk/English/management5.html",
+        "https://www.ccbintl.com.hk/English/management8.html",
+        "https://www.ccbintl.com.hk/English/management9.html"
+      ],
       "errors": [
-        "Link discovery failed for https://www.ccbintl.com.hk/English/management7.html: HTTPSConnectionPool(host='www.ccbintl.com.hk', port=443): Max retries exceeded with url: /English/management7.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))",
-        "Fetch failed for https://www.ccbintl.com.hk/English/management7.html: HTTPSConnectionPool(host='www.ccbintl.com.hk', port=443): Max retries exceeded with url: /English/management7.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))",
         "No global fund AUM evidence extracted.",
         "No mainland share-class AUM evidence extracted."
       ]
@@ -266,7 +271,7 @@
         "https://www.valuepartners-group.com/en/products-services/funds/fund-documents-hong-kong-retail-investors/",
         "https://www.valuepartners-group.com/wp-content/uploads/2020/02/HKSFC_Factsheet_annual-performance_20191231.pdf",
         "https://www.valuepartners-group.com/ftp/files/reports/cg/001_fact_sheet/eng/cg_fact_sheet_2026-10-01_en.pdf",
-        "https://www.valuepartners-group.com/ftp/files/reports/hdlv/001_fact_sheet/eng/hdlv_fact_sheet_2026-09-01_en.pdf",
+        "https://www.valuepartners-group.com/ftp/files/reports/hdlv/001_fact_sheet/eng/hdlv_fact_sheet_2026-10-01_en.pdf",
         "https://www.valuepartners-group.com/ftp/files/reports/vacb/001_fact_sheet/eng/vacb_fact_sheet_2026-10-01_en.pdf",
         "https://www.valuepartners-group.com/ftp/files/reports/vaif/001_fact_sheet/eng/vaif_fact_sheet_2026-10-01_en.pdf",
         "https://www.valuepartners-group.com/ftp/files/reports/vaio/001_fact_sheet/eng/vaio_fact_sheet_2026-10-01_en.pdf",
